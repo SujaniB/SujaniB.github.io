@@ -35,6 +35,44 @@ siteNav?.querySelectorAll('a').forEach(a => {
   });
 });
 
+// Keep the pastel navigation state aligned with the current homepage section.
+(() => {
+  const sectionLinks = Array.from(document.querySelectorAll('.nav-link[href^="#"]'));
+  if (!sectionLinks.length) return;
+
+  const sections = sectionLinks
+    .map(link => document.querySelector(link.getAttribute('href')))
+    .filter(Boolean);
+  if (!sections.length) return;
+
+  const setActive = (id) => {
+    sectionLinks.forEach(link => {
+      link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+    });
+  };
+
+  sectionLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      const id = link.getAttribute('href').slice(1);
+      if (id) setActive(id);
+    });
+  });
+
+  if (!('IntersectionObserver' in window)) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    const visible = entries
+      .filter(entry => entry.isIntersecting)
+      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+    if (visible?.target?.id) setActive(visible.target.id);
+  }, {
+    rootMargin: '-30% 0px -55% 0px',
+    threshold: [0.15, 0.35, 0.6]
+  });
+
+  sections.forEach(section => observer.observe(section));
+})();
+
 // Copy text buttons
 (() => {
   const buttons = document.querySelectorAll('[data-copy-target]');

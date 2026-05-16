@@ -4,18 +4,18 @@ body.journey-page {
   --journey-paper: #261c38;
   --journey-ink: #fff8e7;
   --journey-muted: #cbd5e1;
-  --journey-sky: #38bdf8;
-  --journey-teal: #2dd4bf;
-  --journey-green: #22c55e;
-  --journey-yellow: #facc15;
-  --journey-orange: #fb923c;
-  --journey-coral: #fb7185;
-  --journey-purple: #a78bfa;
+  --journey-sky: #C6DEF1;
+  --journey-teal: #C9E4DE;
+  --journey-green: #C9E4DE;
+  --journey-yellow: #FAEDCB;
+  --journey-orange: #F7D9C4;
+  --journey-coral: #F2C6DE;
+  --journey-purple: #DBCDF0;
   --journey-shadow: rgba(4, 7, 18, .34);
   background:
-    radial-gradient(circle at 12% 8%, rgba(250, 204, 21, .20), transparent 24rem),
-    radial-gradient(circle at 86% 14%, rgba(56, 189, 248, .22), transparent 25rem),
-    radial-gradient(circle at 72% 72%, rgba(251, 113, 133, .18), transparent 28rem),
+    radial-gradient(circle at 12% 8%, rgba(250, 237, 203, .20), transparent 24rem),
+    radial-gradient(circle at 86% 14%, rgba(198, 222, 241, .22), transparent 25rem),
+    radial-gradient(circle at 72% 72%, rgba(242, 198, 222, .18), transparent 28rem),
     linear-gradient(180deg, #24163a 0%, #10283a 46%, #171226 100%) !important;
   color: var(--journey-ink) !important;
   overflow-x: hidden;
@@ -26,7 +26,7 @@ body.journey-page .site-header {
 }
 
 body.journey-page .nav-container {
-  border: 1px solid rgba(251, 146, 60, .26);
+  border: 1px solid rgba(247, 217, 196, .26);
   background:
     linear-gradient(135deg, rgba(255, 255, 255, .10), rgba(255, 255, 255, .035)),
     rgba(23, 18, 38, .78);
@@ -48,21 +48,21 @@ body.journey-page .site-header .nav-link {
 }
 
 body.journey-page .site-header .nav-link::after {
-  background: linear-gradient(90deg, #f6c85f 0%, #fb923c 48%, #38bdf8 100%);
-  box-shadow: 0 0 12px rgba(251, 146, 60, .28);
+  background: linear-gradient(90deg, #FAEDCB 0%, #F7D9C4 48%, #C6DEF1 100%);
+  box-shadow: 0 0 12px rgba(247, 217, 196, .28);
 }
 
 body.journey-page .site-header .nav-link:hover,
 body.journey-page .site-header .nav-link:focus-visible,
 body.journey-page .site-header .nav-link.active {
   color: var(--journey-ink);
-  background: rgba(251, 146, 60, .16);
-  box-shadow: inset 0 0 0 1px rgba(251, 146, 60, .18);
+  background: rgba(247, 217, 196, .16);
+  box-shadow: inset 0 0 0 1px rgba(247, 217, 196, .18);
 }
 
 body.journey-page .site-header .theme-toggle,
 body.journey-page .site-header .menu-toggle {
-  border-color: rgba(251, 146, 60, .28);
+  border-color: rgba(247, 217, 196, .28);
   background: rgba(255, 255, 255, .08);
 }
 
@@ -70,8 +70,8 @@ body.journey-page .site-header .theme-toggle:hover,
 body.journey-page .site-header .theme-toggle:focus-visible,
 body.journey-page .site-header .menu-toggle:hover,
 body.journey-page .site-header .menu-toggle:focus-visible {
-  border-color: rgba(251, 146, 60, .42);
-  background: rgba(251, 146, 60, .14);
+  border-color: rgba(247, 217, 196, .42);
+  background: rgba(247, 217, 196, .14);
 }
 
 .journey-main {
@@ -128,7 +128,7 @@ body.journey-page .site-header .menu-toggle:focus-visible {
   width: 18rem;
   height: 18rem;
   border-radius: 999px;
-  background: rgba(251, 146, 60, .18);
+  background: rgba(247, 217, 196, .18);
 }
 
 .journey-hero-content {
@@ -144,7 +144,7 @@ body.journey-page .site-header .menu-toggle:focus-visible {
   border-radius: 999px;
   color: color-mix(in oklab, var(--journey-yellow), white 18%);
   background: rgba(255, 255, 255, .08);
-  box-shadow: inset 0 0 0 1px rgba(251, 146, 60, .22);
+  box-shadow: inset 0 0 0 1px rgba(247, 217, 196, .22);
   font-size: .82rem;
   font-weight: 900;
   letter-spacing: .05em;
@@ -216,11 +216,11 @@ body.journey-page .site-header .menu-toggle:focus-visible {
 }
 
 .journey-hero-chips span:nth-child(2n) {
-  background: rgba(45, 212, 191, .15);
+  background: rgba(201, 228, 222, .15);
 }
 
 .journey-hero-chips span:nth-child(3n) {
-  background: rgba(250, 204, 21, .14);
+  background: rgba(250, 237, 203, .14);
 }
 
 .journey-hero-actions,
@@ -305,7 +305,7 @@ body.journey-page .site-header .menu-toggle:focus-visible {
   border-radius: 32px;
   background:
     linear-gradient(180deg, transparent, rgba(251, 146, 60, .10)),
-    radial-gradient(ellipse at center, rgba(250, 204, 21, .12), transparent 65%);
+    radial-gradient(ellipse at center, rgba(250, 237, 203, .12), transparent 65%);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, .14);
 }
@@ -313,7 +313,7 @@ body.journey-page .site-header .menu-toggle:focus-visible {
 .journey-table-surface.table-missing {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, .12), rgba(8, 5, 17, .24)),
-    repeating-linear-gradient(90deg, rgba(250, 204, 21, .08) 0 2px, transparent 2px 30px),
+    repeating-linear-gradient(90deg, rgba(250, 237, 203, .08) 0 2px, transparent 2px 30px),
     linear-gradient(135deg, #5f3a31, #8b4a34 48%, #593047);
 }
 
@@ -390,7 +390,7 @@ body.journey-page .site-header .menu-toggle:focus-visible {
   top: -8px;
   height: 18px;
   border-radius: 4px;
-  background: rgba(250, 204, 21, .38);
+  background: rgba(250, 237, 203, .38);
   transform: rotate(-2deg);
 }
 
@@ -762,15 +762,15 @@ body.journey-page .site-header .menu-toggle:focus-visible {
   width: 7rem;
   height: 7rem;
   border-radius: 999px;
-  background: rgba(56, 189, 248, .18);
+  background: rgba(198, 222, 241, .18);
 }
 
 .life-highlight-card:nth-child(2)::after {
-  background: rgba(250, 204, 21, .24);
+  background: rgba(250, 237, 203, .24);
 }
 
 .life-highlight-card:nth-child(3)::after {
-  background: rgba(251, 113, 133, .18);
+  background: rgba(242, 198, 222, .18);
 }
 
 .life-highlight-icon {
@@ -831,19 +831,19 @@ body.journey-page .site-header .menu-toggle:focus-visible {
   inset: auto -1rem -2.4rem;
   height: 4.5rem;
   border-radius: 999px 999px 0 0;
-  background: rgba(56, 189, 248, .18);
+  background: rgba(198, 222, 241, .18);
 }
 
 .hobby-card:nth-child(2n)::before {
-  background: rgba(250, 204, 21, .25);
+  background: rgba(250, 237, 203, .25);
 }
 
 .hobby-card:nth-child(3n)::before {
-  background: rgba(45, 212, 191, .20);
+  background: rgba(201, 228, 222, .20);
 }
 
 .hobby-card:nth-child(4n)::before {
-  background: rgba(251, 113, 133, .18);
+  background: rgba(242, 198, 222, .18);
 }
 
 .hobby-card span {
@@ -890,7 +890,7 @@ body.journey-page .site-header .menu-toggle:focus-visible {
   padding: .25rem .58rem;
   border-radius: 999px;
   color: color-mix(in oklab, var(--journey-teal), white 18%);
-  background: rgba(45, 212, 191, .12);
+  background: rgba(201, 228, 222, .12);
   font-size: .76rem;
   font-weight: 900;
   letter-spacing: .04em;
@@ -983,7 +983,7 @@ body.journey-page .site-header .menu-toggle:focus-visible {
   padding: .38rem .68rem;
   border-radius: 999px;
   color: color-mix(in oklab, var(--journey-yellow), white 12%);
-  background: rgba(251, 146, 60, .15);
+  background: rgba(247, 217, 196, .15);
   font-weight: 800;
 }
 
@@ -1022,8 +1022,8 @@ body.journey-page .site-header .menu-toggle:focus-visible {
   padding: clamp(1.3rem, 4vw, 2.4rem);
   border-radius: 32px;
   background:
-    radial-gradient(circle at 84% 18%, rgba(56, 189, 248, .18), transparent 13rem),
-    radial-gradient(circle at 18% 78%, rgba(250, 204, 21, .16), transparent 14rem),
+    radial-gradient(circle at 84% 18%, rgba(198, 222, 241, .18), transparent 13rem),
+    radial-gradient(circle at 18% 78%, rgba(250, 237, 203, .16), transparent 14rem),
     linear-gradient(135deg, rgba(255, 255, 255, .12), rgba(255, 255, 255, .045)),
     var(--journey-paper);
 }

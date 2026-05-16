@@ -15,14 +15,14 @@
   <body>
     <header class="site-header">
       <div class="container row nav-container">
-        <a class="brand nav-link active" href="#top">Bhagya</a>
+        <a class="brand" href="#top">Bhagya</a>
         <button class="menu-toggle nav-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">☰</button>
         <nav class="nav nav-links" id="siteNav" aria-label="Primary navigation">
-          <a class="nav-link" href="#about">About</a>
-          <a class="nav-link" href="#research">Research</a>
-          <a class="nav-link" href="#recognitions">Recognitions</a>
-          <a class="nav-link" href="#volunteering">Volunteering</a>
-          <a class="nav-link" href="blog.html">Blog</a>
+          <a class="nav-link nav-about active" href="#about"><span class="nav-icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.25"></circle><path d="M5.75 19.25a6.25 6.25 0 0 1 12.5 0"></path></svg></span>About</a>
+          <a class="nav-link nav-research" href="#research"><span class="nav-icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5.5 18.5c7.75-.5 12-4.75 13-13-8.25 1-12.5 5.25-13 13Z"></path><path d="M8.5 15.5 15 9"></path><path d="M10.25 9.75h5v5"></path></svg></span>Research</a>
+          <a class="nav-link nav-recognitions" href="#recognitions"><span class="nav-icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 4.5 2.15 4.35 4.8.7-3.48 3.39.82 4.78L12 15.47l-4.29 2.25.82-4.78-3.48-3.39 4.8-.7L12 4.5Z"></path></svg></span>Recognitions</a>
+          <a class="nav-link nav-volunteering" href="#volunteering"><span class="nav-icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7.25 12.5 12 17l4.75-4.5a3.15 3.15 0 0 0-4.45-4.45L12 8.35l-.3-.3a3.15 3.15 0 0 0-4.45 4.45Z"></path><path d="M5 19.25h14"></path></svg></span>Volunteering</a>
+          <a class="nav-link nav-blog" href="blog.html"><span class="nav-icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5.25 18.75 6.2 15l8.9-8.9a2.05 2.05 0 0 1 2.9 2.9L9.1 17.9l-3.85.85Z"></path><path d="m13.75 7.45 2.8 2.8"></path></svg></span>Blog</a>
         </nav>
       </div>
     </header>
@@ -30,15 +30,15 @@
       <section class="hero container will-animate">
         <div class="hero-text">
           <p class="eyebrow">Food Science, Nutrition, and Digital Health Researcher</p>
-          <h1>Hi, I'm <span class="highlight">Bhagya</span>.</h1>
+          <h1>Hi, I'm <span class="highlight">Bhagya</span></h1>
           <p class="lead">I explore food science, nutrition, and public health through data-driven dietary assessment, functional foods, and AI-based nutrition tools.</p>
           <p class="hero-subtitle">I build evidence-based nutrition solutions that are warm, scholarly, and designed for research, graduate applications, and professional collaborations.</p>
           <div class="hero-actions">
-            <a class="btn primary" href="#research">Explore Research</a>
-            <a class="btn" href="blog.html">Read Blog</a>
-            <a class="btn" href="#about">About</a>
+            <a class="btn btn-research" href="#research">Explore Research 🌿</a>
+            <a class="btn btn-blog" href="blog.html">Read Blog ✎</a>
+            <a class="btn btn-about" href="#about">About 👤</a>
           </div>
-          <ul class="pill-list">
+          <ul class="pill-list will-animate-stagger">
             <li>Food science</li>
             <li>Nutrition</li>
             <li>Public health</li>
@@ -47,13 +47,50 @@
           </ul>
         </div>
         <div class="hero-art">
-          <div class="profile-frame">
-            <img src="assets/Bhagya.JPG" alt="Profile photo for Bhagya — replace with your own portrait" />
+          <div class="hero-blobs">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
           </div>
-          <!-- TODO: Replace profile image with your own portrait and optionally link to a CV or contact section. -->
+          <div class="profile-frame">
+            <img src="assets/Bhagya.JPG" alt="Profile photo for Bhagya" />
+          </div>
         </div>
       </section>
-      <section id="about" class="container section about-section reveal" aria-labelledby="aboutTitle">
+
+      <section class="container section explore-section reveal">
+        <div class="section-header">
+          <span class="section-label">Overview</span>
+          <h2>Explore My Work</h2>
+        </div>
+        <div class="explore-grid">
+          <a href="#about" class="explore-card accent-about">
+            <span class="card-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.25"></circle><path d="M5.75 19.25a6.25 6.25 0 0 1 12.5 0"></path></svg></span>
+            <h3>About</h3>
+            <p>Scholarly background and professional narrative.</p>
+          </a>
+          <a href="#research" class="explore-card accent-research">
+            <span class="card-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5.5 18.5c7.75-.5 12-4.75 13-13-8.25 1-12.5 5.25-13 13Z"></path><path d="M8.5 15.5 15 9"></path><path d="M10.25 9.75h5v5"></path></svg></span>
+            <h3>Research</h3>
+            <p>Themes, publications, and technical projects.</p>
+          </a>
+          <a href="#recognitions" class="explore-card accent-recognitions">
+            <span class="card-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 4.5 2.15 4.35 4.8.7-3.48 3.39.82 4.78L12 15.47l-4.29 2.25.82-4.78-3.48-3.39 4.8-.7L12 4.5Z"></path></svg></span>
+            <h3>Recognitions</h3>
+            <p>Academic honors, awards, and distinctions.</p>
+          </a>
+          <a href="#volunteering" class="explore-card accent-volunteering">
+            <span class="card-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7.25 12.5 12 17l4.75-4.5a3.15 3.15 0 0 0-4.45-4.45L12 8.35l-.3-.3a3.15 3.15 0 0 0-4.45 4.45Z"></path><path d="M5 19.25h14"></path></svg></span>
+            <h3>Volunteering</h3>
+            <p>Community engagement and student leadership.</p>
+          </a>
+          <a href="blog.html" class="explore-card accent-blog">
+            <span class="card-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5.25 18.75 6.2 15l8.9-8.9a2.05 2.05 0 0 1 2.9 2.9L9.1 17.9l-3.85.85Z"></path><path d="m13.75 7.45 2.8 2.8"></path></svg></span>
+            <h3>Blog</h3>
+            <p>Reflections on nutrition and food science.</p>
+          </a>
+        </div>
+      </section>
+      <section id="about" class="container section about-section section-about reveal" aria-labelledby="aboutTitle">
         <div class="section-header">
           <span class="section-label">About</span>
           <h2 id="aboutTitle">Researcher in food science, nutrition, and digital health</h2>
@@ -67,6 +104,7 @@
           <div class="about-cards">
             <article class="card">
               <h3>Education</h3>
+              <p><strong>University of Peradeniya</strong></p>
               <p>Master's / doctoral-level training in Food Science, Nutrition, and Public Health with a focus on digital nutrition and metabolic health.</p>
             </article>
             <article class="card">
@@ -94,7 +132,7 @@
           </div>
         </div>
       </section>
-      <section id="research" class="container section reveal" aria-labelledby="researchTitle">
+      <section id="research" class="container section section-research reveal" aria-labelledby="researchTitle">
         <div class="section-header">
           <span class="section-label">Research</span>
           <h2 id="researchTitle">Focused research themes</h2>
@@ -153,7 +191,7 @@
           </article>
         </div>
       </section>
-      <section id="recognitions" class="container section reveal" aria-labelledby="recognitionsTitle">
+      <section id="recognitions" class="container section section-recognitions reveal" aria-labelledby="recognitionsTitle">
         <div class="section-header">
           <span class="section-label">Recognitions</span>
           <h2 id="recognitionsTitle">Academic honors and awards</h2>
@@ -197,7 +235,7 @@
           </div>
         </div>
       </section>
-      <section id="volunteering" class="container section reveal" aria-labelledby="volunteeringTitle">
+      <section id="volunteering" class="container section section-volunteering reveal" aria-labelledby="volunteeringTitle">
         <div class="section-header">
           <span class="section-label">Volunteering</span>
           <h2 id="volunteeringTitle">Community engagement and leadership</h2>
@@ -222,7 +260,7 @@
           </article>
         </div>
       </section>
-      <section id="blog" class="container section reveal" aria-labelledby="blogTitle">
+      <section id="blog" class="container section section-blog reveal" aria-labelledby="blogTitle">
         <div class="section-header">
           <span class="section-label">Blog</span>
           <h2 id="blogTitle">Insights in nutrition and research</h2>
@@ -253,7 +291,7 @@
         </div>
       </section>
     </main>
-    <footer class="site-footer container">
+    <footer id="footer" class="site-footer container">
       <div class="footer-copy">
         <p class="footer-title">Bhagya — Food Science & Nutrition Researcher</p>
         <p>Professional academic portfolio for graduate research, collaborations, and nutrition science leadership.</p>
