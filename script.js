@@ -73,6 +73,21 @@ siteNav?.querySelectorAll('a').forEach(a => {
   sections.forEach(section => observer.observe(section));
 })();
 
+// Hero action buttons: toggle persistent active state on click
+(() => {
+  const heroBtns = document.querySelectorAll('.hero-actions .btn');
+  if (!heroBtns.length) return;
+
+  heroBtns.forEach(b => {
+    b.addEventListener('click', (e) => {
+      // remove active from other hero buttons
+      heroBtns.forEach(x => x.classList.remove('active'));
+      // add active to clicked
+      b.classList.add('active');
+    });
+  });
+})();
+
 // Copy text buttons
 (() => {
   const buttons = document.querySelectorAll('[data-copy-target]');

@@ -7,11 +7,11 @@
   --pastel-pink: #F2C6DE;
   --pastel-peach: #F7D9C4;
 
-  --about-accent: var(--pastel-cream);
-  --research-accent: var(--pastel-mint);
+  --about-accent: var(--pastel-pink);
+  --research-accent: var(--pastel-lavender);
   --recognitions-accent: var(--pastel-blue);
-  --volunteering-accent: var(--pastel-lavender);
-  --blog-accent: var(--pastel-pink);
+  --volunteering-accent: var(--pastel-mint);
+  --blog-accent: var(--pastel-cream);
   --general-accent: var(--pastel-peach);
 
   --text: #2B2B2B;
@@ -116,18 +116,18 @@ button {
 .nav-about,
 .section-about {
   --nav-accent: var(--about-accent);
-  --nav-ink: #A97708;
+  --nav-ink: #B9577A;
   --section-accent: var(--about-accent);
-  --section-ink: #A97708;
+  --section-ink: #B9577A;
   --section-icon: "A";
 }
 
 .nav-research,
 .section-research {
   --nav-accent: var(--research-accent);
-  --nav-ink: #2A8C75;
+  --nav-ink: #7D5B9D;
   --section-accent: var(--research-accent);
-  --section-ink: #2A8C75;
+  --section-ink: #7D5B9D;
   --section-icon: "R";
 }
 
@@ -143,18 +143,18 @@ button {
 .nav-volunteering,
 .section-volunteering {
   --nav-accent: var(--volunteering-accent);
-  --nav-ink: #7D5B9D;
+  --nav-ink: #2A8C75;
   --section-accent: var(--volunteering-accent);
-  --section-ink: #7D5B9D;
+  --section-ink: #2A8C75;
   --section-icon: "V";
 }
 
 .nav-blog,
 .section-blog {
   --nav-accent: var(--blog-accent);
-  --nav-ink: #B9577A;
+  --nav-ink: #A97708;
   --section-accent: var(--blog-accent);
-  --section-ink: #B9577A;
+  --section-ink: #A97708;
   --section-icon: "B";
 }
 
@@ -179,6 +179,26 @@ button {
   stroke-width: 1.75;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+
+/* Award / category icons use the same accent system as nav and explore cards */
+.award-card-icon,
+.award-category-icon {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--section-ink, var(--accent-deep));
+  background: color-mix(in srgb, var(--section-accent, var(--general-accent)) 74%, white);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.58), 0 8px 18px color-mix(in srgb, var(--section-accent, var(--general-accent)) 42%, transparent);
+}
+
+.award-card-icon i,
+.award-category-icon i {
+  font-size: 1.15rem;
+  line-height: 1;
+  color: currentColor;
 }
 
 .nav-link:hover,
@@ -281,6 +301,36 @@ button {
   font-weight: 600;
   box-shadow: 0 8px 20px var(--shadow);
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.hero-actions .btn .nav-icon-badge {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.6rem;
+}
+
+/* Hover state for hero buttons: show section colour */
+.hero-actions .btn:hover {
+  color: var(--text);
+  background: color-mix(in srgb, var(--nav-accent) 36%, white);
+  border-color: color-mix(in srgb, var(--nav-accent) 68%, white);
+  box-shadow: 0 10px 24px color-mix(in srgb, var(--nav-accent) 40%, transparent);
+  transform: translateY(-1px);
+}
+
+/* Active / clicked state for hero buttons (persisted via JS) */
+.hero-actions .btn:active,
+.hero-actions .btn.active {
+  color: var(--text);
+  background: color-mix(in srgb, var(--nav-accent) 36%, white);
+  border-color: color-mix(in srgb, var(--nav-accent) 68%, white);
+  box-shadow: 0 10px 24px color-mix(in srgb, var(--nav-accent) 40%, transparent);
+  transform: translateY(-1px);
+}
+
+.hero-actions .btn:focus {
+  outline: 3px solid color-mix(in srgb, var(--nav-accent) 22%, white);
+  outline-offset: 3px;
 }
 
 .btn:hover {
@@ -425,19 +475,21 @@ button {
   align-items: center;
   justify-content: center;
   color: var(--section-ink, var(--accent-deep));
+  background: color-mix(in srgb, var(--section-accent) 74%, white);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.58), 0 8px 18px color-mix(in srgb, var(--section-accent) 42%, transparent);
 }
 
-.accent-about { --section-ink: #A97708; }
-.accent-research { --section-ink: #2A8C75; }
-.accent-recognitions { --section-ink: #2C7FAB; }
-.accent-volunteering { --section-ink: #7D5B9D; }
-.accent-blog { --section-ink: #B9577A; }
+.accent-about { --section-accent: var(--about-accent); --section-ink: #B9577A; }
+.accent-research { --section-accent: var(--research-accent); --section-ink: #7D5B9D; }
+.accent-recognitions { --section-accent: var(--recognitions-accent); --section-ink: #2C7FAB; }
+.accent-volunteering { --section-accent: var(--volunteering-accent); --section-ink: #2A8C75; }
+.accent-blog { --section-accent: var(--blog-accent); --section-ink: #A97708; }
 
-.accent-about .card-badge { background: var(--about-accent); }
-.accent-research .card-badge { background: var(--research-accent); }
-.accent-recognitions .card-badge { background: var(--recognitions-accent); }
-.accent-volunteering .card-badge { background: var(--volunteering-accent); }
-.accent-blog .card-badge { background: var(--blog-accent); }
+/* Awards page category accents */
+.award-category-card.accent-gold { --section-accent: var(--pastel-cream); --section-ink: #A97708; }
+.award-category-card.accent-purple { --section-accent: var(--pastel-lavender); --section-ink: #7D5B9D; }
+.award-category-card.accent-green { --section-accent: var(--pastel-mint); --section-ink: #2A8C75; }
+.award-category-card.accent-blue { --section-accent: var(--pastel-blue); --section-ink: #2C7FAB; }
 
 .section-label {
   display: inline-flex;
@@ -465,6 +517,27 @@ button {
   border-radius: 32px;
   border: 1px solid rgba(142, 102, 94, 0.12);
   padding: 3rem 2rem;
+}
+
+/* Section backgrounds with their respective accent colors */
+.section-about {
+  background: color-mix(in srgb, var(--section-accent) 60%, white);
+}
+
+.section-research {
+  background: color-mix(in srgb, var(--section-accent) 60%, white);
+}
+
+.section-recognitions {
+  background: color-mix(in srgb, var(--section-accent) 60%, white);
+}
+
+.section-volunteering {
+  background: color-mix(in srgb, var(--section-accent) 60%, white);
+}
+
+.section-blog {
+  background: color-mix(in srgb, var(--section-accent) 60%, white);
 }
 
 .about-grid {
