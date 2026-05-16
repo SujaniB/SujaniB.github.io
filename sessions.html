@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sessions & Invited Talks | Lakshan Madhushanka Bandara</title>
+    <meta name="description" content="Sessions, workshops, invited lectures, and technical talks by Lakshan Madhushanka Bandara on artificial intelligence, computer vision, robotics, engineering, and student learning." />
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container row nav-container">
+        <a class="brand nav-link" href="index.html">Home</a>
+        <button class="menu-toggle nav-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">&#9776;</button>
+        <nav class="nav nav-links" id="siteNav" aria-label="Primary navigation">
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="lecturing.html">Lecturing</a>
+          <a class="nav-link" href="research-publications.html">Research</a>
+          <a class="nav-link" href="awards.html">Recognitions</a>
+          <a class="nav-link" href="volunteering.html">Volunteering</a>
+          <a class="nav-link active" href="sessions.html">Sessions</a>
+          <a class="nav-link" href="blog.html">Blog</a>
+          <a class="nav-link" href="travel.html">Journey</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">&#9790;</button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top" class="sessions-page">
+      <svg class="session-svg-defs" aria-hidden="true" focusable="false">
+        <symbol id="session-icon-ai" viewBox="0 0 24 24"><path d="M8 3v3M16 3v3M8 18v3M16 18v3M3 8h3M3 16h3M18 8h3M18 16h3"/><rect x="6" y="6" width="12" height="12" rx="3"/><path d="M9 15V9h3a2 2 0 0 1 0 4H9M15 9v6"/></symbol>
+        <symbol id="session-icon-vision" viewBox="0 0 24 24"><path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z"/><circle cx="12" cy="12" r="3"/></symbol>
+        <symbol id="session-icon-mic" viewBox="0 0 24 24"><path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3Z"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M8 21h8"/></symbol>
+        <symbol id="session-icon-screen" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 21h8M12 16v5M7 9h5M7 12h9"/></symbol>
+        <symbol id="session-icon-people" viewBox="0 0 24 24"><path d="M16 11a3 3 0 1 0-2.83-4M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM3 20a5 5 0 0 1 10 0M13 20a4.5 4.5 0 0 1 8 0"/></symbol>
+        <symbol id="session-icon-robot" viewBox="0 0 24 24"><rect x="5" y="8" width="14" height="10" rx="2"/><path d="M12 8V4M9 4h6M8 13h.01M16 13h.01M9 18v2M15 18v2"/></symbol>
+        <symbol id="session-icon-code" viewBox="0 0 24 24"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 4l-4 16"/></symbol>
+        <symbol id="session-icon-write" viewBox="0 0 24 24"><path d="M4 20h4l11-11a2.8 2.8 0 0 0-4-4L4 16v4Z"/><path d="m13.5 6.5 4 4M12 20h8"/></symbol>
+        <symbol id="session-icon-network" viewBox="0 0 24 24"><circle cx="5" cy="12" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="19" cy="19" r="2"/><path d="m7 11 10-5M7 13l10 5"/></symbol>
+        <symbol id="session-icon-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.9-5.4 2.9 1-6-4.4-4.3 6.1-.9L12 3Z"/></symbol>
+      </svg>
+
+      <section class="container sessions-hero page-hero will-animate">
+        <div class="sessions-hero-copy page-hero-content">
+          <h1 class="page-split-title">Sessions<br><span class="title-amp">&amp;</span><br><span class="grad grad-anim nowrap">Invited Talks</span></h1>
+          <p class="lead">Knowledge-sharing sessions, workshops, invited lectures, and technical talks across artificial intelligence, computer vision, biomedical imaging, robotics, software development, and emerging technologies.</p>
+          <div class="session-chip-row">
+            <span><i class="fa-solid fa-microchip" aria-hidden="true"></i> Technical Sessions</span>
+            <span><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i> Workshops</span>
+            <span><i class="fa-solid fa-users-gear" aria-hidden="true"></i> Leadership Guidance</span>
+          </div>
+        </div>
+        <figure class="page-hero-art session-hero-visual">
+          <img class="page-hero-image" src="assets/hero/sessions.png" alt="Illustration representing invited talks, workshops, academic sessions, and knowledge sharing">
+          <div class="hero-neural-overlay" aria-hidden="true"></div>
+          <div class="hero-neural-firing" aria-hidden="true"></div>
+        </figure>
+      </section>
+
+      <section class="container section sessions-org-section" aria-labelledby="organizationsSessionsTitle">
+        <div class="session-section-head">
+          <svg class="session-line-icon"><use href="#session-icon-network"></use></svg>
+          <div>
+            <h2 id="organizationsSessionsTitle" class="reveal fancy-head">Organizations I Have Delivered Sessions For</h2>
+          </div>
+        </div>
+        <div class="sessions-org-marquee reveal">
+          <div class="org-marquee-viewport">
+            <div class="org-marquee-track">
+              <article class="org-logo-item"><img class="org-logo-img" src="assets/logos/ieee.svg" alt="IEEE logo" /><strong>IEEE Young Professionals Bangladesh</strong><span class="org-session-type">Invited Talk</span></article>
+              <article class="org-logo-item"><img class="org-logo-img" src="assets/logos/ieee.svg" alt="IEEE logo" /><strong>IEEE ULAB Student Branch</strong><span class="org-session-type">Session Partner</span></article>
+              <article class="org-logo-item"><img class="org-logo-img" src="assets/logos/ieee.svg" alt="IEEE logo" /><strong>IEEE TryEngineering</strong><span class="org-session-type">Judging</span></article>
+              <article class="org-logo-item"><img class="org-logo-img" src="assets/favicon.png" alt="" /><strong>National Student Leadership Conference</strong><span class="org-session-type">Student Presentations</span></article>
+              <article class="org-logo-item"><img class="org-logo-img" src="assets/favicon.png" alt="" /><strong>Columbia University</strong><span class="org-session-type">Venue</span></article>
+              <article class="org-logo-item"><img class="org-logo-img" src="assets/favicon.png" alt="" /><strong>AIESEC in Rajarata University</strong><span class="org-session-type">Guest Speaker</span></article>
+              <article class="org-logo-item"><img class="org-logo-img" src="assets/logos/usjp.png" alt="University of Sri Jayewardenepura logo" /><strong>University of Sri Jayewardenepura</strong><span class="org-session-type">Academic Session</span></article>
+              <article class="org-logo-item"><img class="org-logo-img" src="assets/logos/uop.png" alt="University of Peradeniya logo" /><strong>University of Peradeniya</strong><span class="org-session-type">Academic Session</span></article>
+              <article class="org-logo-item" aria-hidden="true"><img class="org-logo-img" src="assets/logos/ieee.svg" alt="" /><strong>IEEE Young Professionals Bangladesh</strong><span class="org-session-type">Invited Talk</span></article>
+              <article class="org-logo-item" aria-hidden="true"><img class="org-logo-img" src="assets/logos/ieee.svg" alt="" /><strong>IEEE ULAB Student Branch</strong><span class="org-session-type">Session Partner</span></article>
+              <article class="org-logo-item" aria-hidden="true"><img class="org-logo-img" src="assets/logos/ieee.svg" alt="" /><strong>IEEE TryEngineering</strong><span class="org-session-type">Judging</span></article>
+              <article class="org-logo-item" aria-hidden="true"><img class="org-logo-img" src="assets/favicon.png" alt="" /><strong>National Student Leadership Conference</strong><span class="org-session-type">Student Presentations</span></article>
+              <article class="org-logo-item" aria-hidden="true"><img class="org-logo-img" src="assets/favicon.png" alt="" /><strong>Columbia University</strong><span class="org-session-type">Venue</span></article>
+              <article class="org-logo-item" aria-hidden="true"><img class="org-logo-img" src="assets/favicon.png" alt="" /><strong>AIESEC in Rajarata University</strong><span class="org-session-type">Guest Speaker</span></article>
+              <article class="org-logo-item" aria-hidden="true"><img class="org-logo-img" src="assets/logos/usjp.png" alt="" /><strong>University of Sri Jayewardenepura</strong><span class="org-session-type">Academic Session</span></article>
+              <article class="org-logo-item" aria-hidden="true"><img class="org-logo-img" src="assets/logos/uop.png" alt="" /><strong>University of Peradeniya</strong><span class="org-session-type">Academic Session</span></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section sessions-featured-section" aria-labelledby="featuredSessionTitle">
+        <div class="session-section-head">
+          <svg class="session-line-icon"><use href="#session-icon-star"></use></svg>
+          <h2 id="featuredSessionTitle" class="reveal fancy-head">Featured Session</h2>
+        </div>
+        <article class="session-feature-card reveal" data-highlight-category="Session & Invited Talk" data-highlight-title="IEEE Young Professionals Bangladesh International Talk Series" data-highlight-date="July 2025" data-highlight-description="Guest speaker talk on advances in computer vision for medical imaging and robotics." data-highlight-link="sessions.html#featuredSessionTitle">
+          <div class="session-feature-media">
+            <img src="assets/hero/sessions.png" alt="Featured invited talk or workshop moment" />
+          </div>
+          <div class="session-feature-content">
+            <span class="session-type-badge">Invited Talk</span>
+            <h3>IEEE Young Professionals Bangladesh International Talk Series</h3>
+            <dl class="session-detail-list">
+              <div><dt>Event / Organization</dt><dd>IEEE Young Professionals Bangladesh</dd></div>
+              <div><dt>Date</dt><dd>July 2025</dd></div>
+              <div><dt>Venue</dt><dd>Online</dd></div>
+            </dl>
+            <p>Guest speaker talk on "Advances in Computer Vision for Medical Imaging and Robotics", organized with IEEE ULAB Student Branch.</p>
+            <div class="session-topic-chips">
+              <span>Medical Imaging</span>
+              <span>Computer Vision</span>
+              <span>Robotics</span>
+              <span>IEEE Session</span>
+            </div>
+            <a class="session-text-link" href="#featuredSessionTitle">View Details &rarr;</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="container section sessions-list-section" aria-labelledby="sessionsTalksTitle">
+        <div class="session-section-head">
+          <svg class="session-line-icon"><use href="#session-icon-mic"></use></svg>
+          <h2 id="sessionsTalksTitle" class="reveal fancy-head">Sessions & <span class="nowrap">Invited Talks</span></h2>
+        </div>
+        <div class="session-filter-row reveal" aria-label="Session filters">
+          <span>All</span>
+          <span>Invited Talks</span>
+          <span>Workshops</span>
+          <span>Academic Sessions</span>
+          <span>Technical Sessions</span>
+          <span>IEEE Sessions</span>
+        </div>
+        <div class="session-talk-timeline reveal">
+          <article class="session-talk-card" data-highlight-category="Session & Invited Talk" data-highlight-title="IEEE YP Bangladesh International Talk Series" data-highlight-date="July 2025" data-highlight-description="Guest speaker session on advances in computer vision for medical imaging and robotics." data-highlight-link="sessions.html#sessionsTalksTitle">
+            <div class="session-date-marker"><strong>Jul</strong><span>2025</span></div>
+            <div class="session-talk-media"><img src="assets/hero/sessions.png" alt="IEEE YP Bangladesh International Talk Series session" /></div>
+            <div class="session-talk-body">
+              <span class="session-type-badge">Invited Talk</span>
+              <h3>IEEE YP Bangladesh International Talk Series</h3>
+              <p class="session-meta">IEEE Young Professionals Bangladesh &middot; Online</p>
+              <p>Talk: "Advances in Computer Vision for Medical Imaging and Robotics", organized in association with IEEE ULAB Student Branch.</p>
+              <div class="session-topic-chips"><span>Computer Vision</span><span>Medical Imaging</span><span>Robotics</span><span>IEEE Session</span></div>
+            </div>
+          </article>
+          <article class="session-talk-card">
+            <div class="session-date-marker"><strong>Aug</strong><span>2025</span></div>
+            <div class="session-talk-media"><img src="assets/hero/sessions.png" alt="TryEngineering Summer Institute student presentations judging session" /></div>
+            <div class="session-talk-body">
+              <span class="session-type-badge">Judge</span>
+              <h3>TryEngineering Summer Institute Student Presentations</h3>
+              <p class="session-meta">National Student Leadership Conference &middot; Columbia University, New York, USA</p>
+              <p>Invited by IEEE TryEngineering to evaluate student innovation projects in engineering and technology.</p>
+              <div class="session-topic-chips"><span>Student Innovation</span><span>Engineering</span><span>Evaluation</span></div>
+            </div>
+          </article>
+          <article class="session-talk-card">
+            <div class="session-date-marker"><strong>Jan</strong><span>2026</span></div>
+            <div class="session-talk-media"><img src="assets/hero/sessions.png" alt="INTELLECT 2.0 Leadership Program guest speaker session" /></div>
+            <div class="session-talk-body">
+              <span class="session-type-badge">Guest Speaker</span>
+              <h3>INTELLECT 2.0 Leadership Program</h3>
+              <p class="session-meta">AIESEC in Rajarata University of Sri Lanka &middot; Sri Lanka</p>
+              <p>Talk: "Technology and Its Impact on the Future" for a student leadership and emerging technology audience.</p>
+              <div class="session-topic-chips"><span>Emerging Technology</span><span>Leadership</span><span>Future Impact</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="container section" aria-labelledby="sessionMomentsTitle">
+        <div class="session-section-head">
+          <svg class="session-line-icon"><use href="#session-icon-screen"></use></svg>
+          <h2 id="sessionMomentsTitle" class="reveal fancy-head">Moments from Sessions</h2>
+        </div>
+        <div class="session-gallery-grid reveal">
+          <!-- Replace these placeholder image paths with real files from assets/sessions/. -->
+          <figure><img src="assets/hero/sessions.png" alt="Audience attending a knowledge-sharing session" /></figure>
+          <figure><img src="assets/hero/sessions.png" alt="Speaker delivering a technical session" /></figure>
+          <figure><img src="assets/hero/sessions.png" alt="Workshop participants during a practical session" /></figure>
+          <figure><img src="assets/hero/sessions.png" alt="Academic session moment" /></figure>
+          <figure><img src="assets/hero/sessions.png" alt="Group photo after a session" /></figure>
+          <figure><img src="assets/hero/sessions.png" alt="Presentation and discussion moment" /></figure>
+        </div>
+      </section>
+
+      <section class="container section" aria-labelledby="topicsDeliverTitle">
+        <div class="session-section-head">
+          <svg class="session-line-icon"><use href="#session-icon-ai"></use></svg>
+          <h2 id="topicsDeliverTitle" class="reveal fancy-head">Topics I Can Deliver</h2>
+        </div>
+        <div class="session-topic-grid reveal">
+          <article><svg class="session-line-icon"><use href="#session-icon-vision"></use></svg><h3>Computer Vision & Image Processing</h3><p>Visual understanding, image analysis, and applied vision workflows.</p></article>
+          <article><svg class="session-line-icon"><use href="#session-icon-ai"></use></svg><h3>Artificial Intelligence & Machine Learning</h3><p>AI concepts, practical ML workflows, and real-world applications.</p></article>
+          <article><svg class="session-line-icon"><use href="#session-icon-network"></use></svg><h3>Biomedical Image Processing</h3><p>Healthcare-focused image analysis and biomedical data workflows.</p></article>
+          <article><svg class="session-line-icon"><use href="#session-icon-ai"></use></svg><h3>Deep Learning for Medical Imaging</h3><p>Deep learning methods for medical image analysis and decision support.</p></article>
+          <article><svg class="session-line-icon"><use href="#session-icon-robot"></use></svg><h3>Robotics & Intelligent Systems</h3><p>Robotics, automation, perception, and intelligent control concepts.</p></article>
+          <article><svg class="session-line-icon"><use href="#session-icon-code"></use></svg><h3>Web Development & Software Engineering</h3><p>Software foundations, implementation practices, and web systems.</p></article>
+          <article><svg class="session-line-icon"><use href="#session-icon-write"></use></svg><h3>Research Methodology & Academic Writing</h3><p>Research planning, writing, documentation, and communication.</p></article>
+          <article><svg class="session-line-icon"><use href="#session-icon-people"></use></svg><h3>IEEE Leadership & Student Branch Development</h3><p>Leadership development, branch growth, and professional engagement.</p></article>
+          <article><svg class="session-line-icon"><use href="#session-icon-mic"></use></svg><h3>Professional Skills & Technical Communication</h3><p>Presentation skills, technical explanation, and professional confidence.</p></article>
+        </div>
+      </section>
+
+      <section class="container section sessions-invite-section" aria-labelledby="sessionsInviteTitle">
+        <div class="sessions-cta reveal">
+          <i class="fa-solid fa-comments" aria-hidden="true"></i>
+          <div>
+            <h2 id="sessionsInviteTitle">Invite me for a session, workshop, or academic discussion.</h2>
+            <p>I am open to invited talks, workshops, technical sessions, student mentoring sessions, and academic discussions related to computing, artificial intelligence, computer vision, biomedical imaging, robotics, software development, and professional development.</p>
+          </div>
+          <div class="sessions-cta-actions">
+            <a class="btn primary" href="contact.html">Connect &rarr;</a>
+            <a class="btn" href="lecturing.html">View Lecturing &rarr;</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <small>&copy; <span id="year"></span> Lakshan Madhushanka Bandara. All rights reserved.</small>
+      <a class="inline" href="#top">Back to top &uarr;</a>
+    </footer>
+  </body>
+</html>

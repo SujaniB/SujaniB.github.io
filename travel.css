@@ -1,0 +1,1360 @@
+/* Journey happy life page theme */
+body.journey-page {
+  --journey-bg: #171226;
+  --journey-paper: #261c38;
+  --journey-ink: #fff8e7;
+  --journey-muted: #cbd5e1;
+  --journey-sky: #38bdf8;
+  --journey-teal: #2dd4bf;
+  --journey-green: #22c55e;
+  --journey-yellow: #facc15;
+  --journey-orange: #fb923c;
+  --journey-coral: #fb7185;
+  --journey-purple: #a78bfa;
+  --journey-shadow: rgba(4, 7, 18, .34);
+  background:
+    radial-gradient(circle at 12% 8%, rgba(250, 204, 21, .20), transparent 24rem),
+    radial-gradient(circle at 86% 14%, rgba(56, 189, 248, .22), transparent 25rem),
+    radial-gradient(circle at 72% 72%, rgba(251, 113, 133, .18), transparent 28rem),
+    linear-gradient(180deg, #24163a 0%, #10283a 46%, #171226 100%) !important;
+  color: var(--journey-ink) !important;
+  overflow-x: hidden;
+}
+
+body.journey-page .site-header {
+  background: transparent;
+}
+
+body.journey-page .nav-container {
+  border: 1px solid rgba(251, 146, 60, .26);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, .10), rgba(255, 255, 255, .035)),
+    rgba(23, 18, 38, .78);
+  box-shadow:
+    0 16px 34px rgba(4, 7, 18, .26),
+    inset 0 1px 0 rgba(255, 255, 255, .14);
+}
+
+body.journey-page .site-header .brand,
+body.journey-page .site-header .nav-link,
+body.journey-page .site-header .theme-toggle,
+body.journey-page .site-header .menu-toggle {
+  color: var(--journey-ink);
+  text-shadow: none;
+}
+
+body.journey-page .site-header .nav-link {
+  color: color-mix(in oklab, var(--journey-ink), var(--journey-muted) 38%);
+}
+
+body.journey-page .site-header .nav-link::after {
+  background: linear-gradient(90deg, #f6c85f 0%, #fb923c 48%, #38bdf8 100%);
+  box-shadow: 0 0 12px rgba(251, 146, 60, .28);
+}
+
+body.journey-page .site-header .nav-link:hover,
+body.journey-page .site-header .nav-link:focus-visible,
+body.journey-page .site-header .nav-link.active {
+  color: var(--journey-ink);
+  background: rgba(251, 146, 60, .16);
+  box-shadow: inset 0 0 0 1px rgba(251, 146, 60, .18);
+}
+
+body.journey-page .site-header .theme-toggle,
+body.journey-page .site-header .menu-toggle {
+  border-color: rgba(251, 146, 60, .28);
+  background: rgba(255, 255, 255, .08);
+}
+
+body.journey-page .site-header .theme-toggle:hover,
+body.journey-page .site-header .theme-toggle:focus-visible,
+body.journey-page .site-header .menu-toggle:hover,
+body.journey-page .site-header .menu-toggle:focus-visible {
+  border-color: rgba(251, 146, 60, .42);
+  background: rgba(251, 146, 60, .14);
+}
+
+.journey-main {
+  padding-bottom: 2rem;
+}
+
+.journey-page a:focus-visible,
+.journey-page button:focus-visible {
+  outline: 3px solid rgba(56, 189, 248, .36);
+  outline-offset: 4px;
+}
+
+/* Journey animated hero memory table */
+.journey-hero {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(420px, 1.1fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 4rem);
+  width: min(1180px, calc(100% - 2rem));
+  min-height: 620px;
+  margin: clamp(1rem, 2vw, 1.4rem) auto 0;
+  padding: clamp(4rem, 7vw, 6rem) clamp(1.25rem, 4vw, 3rem);
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: 34px;
+  background:
+    radial-gradient(circle at 82% 20%, rgba(56, 189, 248, .24), transparent 34%),
+    radial-gradient(circle at 72% 78%, rgba(250, 204, 21, .18), transparent 36%),
+    radial-gradient(circle at 22% 84%, rgba(251, 113, 133, .18), transparent 28%),
+    linear-gradient(135deg, rgba(45, 31, 68, .94) 0%, rgba(18, 57, 74, .94) 48%, rgba(39, 25, 58, .96) 100%);
+  box-shadow: 0 24px 70px rgba(4, 7, 18, .38);
+  isolation: isolate;
+}
+
+.journey-hero::before,
+.journey-hero::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.journey-hero::before {
+  inset: 0;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(255, 255, 255, .09), transparent 16rem),
+    linear-gradient(90deg, rgba(255, 248, 231, .09), transparent 58%);
+}
+
+.journey-hero::after {
+  right: -5rem;
+  top: -5rem;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 999px;
+  background: rgba(251, 146, 60, .18);
+}
+
+.journey-hero-content {
+  position: relative;
+  z-index: 3;
+}
+
+.journey-eyebrow,
+.journey-section-kicker {
+  width: fit-content;
+  margin: 0 0 .75rem;
+  padding: .3rem .76rem;
+  border-radius: 999px;
+  color: color-mix(in oklab, var(--journey-yellow), white 18%);
+  background: rgba(255, 255, 255, .08);
+  box-shadow: inset 0 0 0 1px rgba(251, 146, 60, .22);
+  font-size: .82rem;
+  font-weight: 900;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.journey-hero h1 {
+  margin: 0;
+  color: var(--journey-ink);
+  font-size: clamp(3.2rem, 8vw, 6.6rem);
+  font-weight: 900;
+  line-height: .95;
+  letter-spacing: 0;
+}
+
+.journey-hero h1::after,
+.journey-section-title::after {
+  content: "";
+  display: block;
+  width: min(100%, 9rem);
+  height: .42rem;
+  margin-top: .18rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--journey-yellow), var(--journey-orange), var(--journey-coral));
+}
+
+.journey-hero-subtitle {
+  max-width: 560px;
+  margin: 1.2rem 0 0;
+  color: color-mix(in oklab, var(--journey-ink), white 8%);
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.7;
+  font-weight: 750;
+}
+
+.journey-hero-support {
+  max-width: 560px;
+  margin: .7rem 0 0;
+  color: var(--journey-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.journey-hero-chips,
+.journey-hero-actions,
+.journey-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem;
+}
+
+.journey-hero-chips {
+  margin-top: 1.35rem;
+}
+
+.journey-hero-chips span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.25rem;
+  padding: .42rem .76rem;
+  border-radius: 999px;
+  color: var(--journey-ink);
+  background: rgba(255, 255, 255, .10);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, .12),
+    0 8px 18px rgba(4, 7, 18, .14);
+  font-size: .86rem;
+  font-weight: 850;
+}
+
+.journey-hero-chips span:nth-child(2n) {
+  background: rgba(45, 212, 191, .15);
+}
+
+.journey-hero-chips span:nth-child(3n) {
+  background: rgba(250, 204, 21, .14);
+}
+
+.journey-hero-actions,
+.journey-cta-actions {
+  margin-top: 1.3rem;
+}
+
+.journey-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.65rem;
+  padding: .72rem 1rem;
+  border-radius: 999px;
+  font-weight: 900;
+  line-height: 1;
+  text-decoration: none;
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.journey-btn-primary {
+  color: #fff;
+  background: linear-gradient(135deg, var(--journey-orange), var(--journey-coral));
+  box-shadow: 0 14px 24px rgba(251, 113, 133, .24);
+}
+
+.journey-btn-secondary {
+  color: var(--journey-ink);
+  background: rgba(255, 255, 255, .10);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .14);
+}
+
+.journey-btn:hover,
+.journey-btn:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 28px rgba(15, 23, 42, .16);
+}
+
+.journey-memory-stage {
+  position: relative;
+  z-index: 2;
+  min-height: 440px;
+  border-radius: 28px;
+  overflow: hidden;
+  isolation: isolate;
+  perspective: 900px;
+}
+
+.journey-memory-stage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 55% 14%, rgba(255, 255, 255, .12), transparent 12rem),
+    radial-gradient(circle at 72% 62%, rgba(56, 189, 248, .18), transparent 14rem);
+  z-index: -1;
+}
+
+.journey-table-surface {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  background:
+    linear-gradient(90deg, rgba(23, 18, 38, .55) 0%, rgba(23, 18, 38, .18) 34%, rgba(23, 18, 38, .08) 100%),
+    linear-gradient(180deg, rgba(23, 18, 38, .10) 0%, rgba(23, 18, 38, .24) 100%),
+    url("assets/hero/journey-table.png");
+  background-size: cover;
+  background-position: center;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .22),
+    inset 0 -40px 70px rgba(15, 10, 22, .28);
+}
+
+.journey-table-surface::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 48%;
+  border-radius: 32px;
+  background:
+    linear-gradient(180deg, transparent, rgba(251, 146, 60, .10)),
+    radial-gradient(ellipse at center, rgba(250, 204, 21, .12), transparent 65%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .14);
+}
+
+.journey-table-surface.table-missing {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, .12), rgba(8, 5, 17, .24)),
+    repeating-linear-gradient(90deg, rgba(250, 204, 21, .08) 0 2px, transparent 2px 30px),
+    linear-gradient(135deg, #5f3a31, #8b4a34 48%, #593047);
+}
+
+.journey-memory-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: var(--z, 3);
+  width: var(--photo-size, clamp(92px, 10vw, 142px));
+  aspect-ratio: 4 / 3;
+  padding: .45rem;
+  margin: 0;
+  border-radius: 16px;
+  background: #fffdf5;
+  box-shadow:
+    0 18px 30px rgba(15, 23, 42, .20),
+    0 3px 0 rgba(255, 255, 255, .8) inset;
+  opacity: 0;
+  transform:
+    translate3d(var(--from-x, 0), var(--from-y, -170px), 0)
+    rotate(var(--start-rotate))
+    rotateX(0deg)
+    scale(.94);
+  transform-origin: center bottom;
+  animation: photoFlyToDesk var(--drop-duration, 18s) cubic-bezier(.18, .82, .24, 1) infinite;
+  animation-delay: var(--drop-delay, 0s);
+}
+
+.journey-memory-photo img,
+.journey-card-photo img,
+.journey-photo-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 11px;
+}
+
+.journey-memory-photo img {
+  background: linear-gradient(135deg, rgba(56, 189, 248, .18), rgba(250, 204, 21, .20));
+}
+
+.journey-memory-photo::before,
+.journey-card-photo::before,
+.journey-photo-card::before {
+  content: "";
+  position: absolute;
+  inset: .45rem;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+  color: color-mix(in oklab, var(--journey-ink), var(--journey-muted) 42%);
+  background:
+    radial-gradient(circle at 28% 22%, rgba(56, 189, 248, .18), transparent 45%),
+    linear-gradient(135deg, rgba(250, 204, 21, .22), rgba(45, 212, 191, .18));
+  font-size: .78rem;
+  font-weight: 850;
+  text-align: center;
+  opacity: 0;
+}
+
+.journey-memory-photo.photo-missing::before,
+.journey-card-photo.photo-missing::before,
+.journey-photo-card.photo-missing::before {
+  content: "Photo to be added";
+  opacity: 1;
+}
+
+.journey-memory-photo::after {
+  content: "";
+  position: absolute;
+  left: 18%;
+  right: 18%;
+  top: -8px;
+  height: 18px;
+  border-radius: 4px;
+  background: rgba(250, 204, 21, .38);
+  transform: rotate(-2deg);
+}
+
+.photo-1,
+.drop-1 { --from-x: -28%; --from-y: -30%; --land-x: 8%; --land-y: 55%; --rest-bottom: 28%; --start-rotate: -28deg; --end-rotate: -8deg; --desk-tilt: 58deg; --drop-delay: -1.2s; --drop-duration: 18s; --z: 3; }
+.photo-2,
+.drop-2 { --from-x: 118%; --from-y: -22%; --land-x: 24%; --land-y: 50%; --rest-bottom: 34%; --start-rotate: 28deg; --end-rotate: 6deg; --desk-tilt: 56deg; --drop-delay: -3.3s; --drop-duration: 20s; --z: 4; }
+.photo-3,
+.drop-3 { --from-x: 42%; --from-y: -35%; --land-x: 41%; --land-y: 58%; --rest-bottom: 24%; --start-rotate: -20deg; --end-rotate: -4deg; --desk-tilt: 57deg; --drop-delay: -5.1s; --drop-duration: 19s; --z: 5; }
+.photo-4,
+.drop-4 { --from-x: -18%; --from-y: 18%; --land-x: 58%; --land-y: 52%; --rest-bottom: 33%; --start-rotate: 22deg; --end-rotate: 7deg; --desk-tilt: 56deg; --drop-delay: -7s; --drop-duration: 21s; --z: 4; }
+.photo-5,
+.drop-5 { --from-x: 115%; --from-y: 22%; --land-x: 74%; --land-y: 58%; --rest-bottom: 18%; --start-rotate: -24deg; --end-rotate: -7deg; --desk-tilt: 58deg; --drop-delay: -8.8s; --drop-duration: 20s; --z: 6; }
+.drop-6 { --from-x: 78%; --from-y: -32%; --land-x: 86%; --land-y: 51%; --rest-bottom: 31%; --start-rotate: 20deg; --end-rotate: 5deg; --desk-tilt: 55deg; --drop-delay: -10.4s; --drop-duration: 18s; --z: 3; }
+.drop-7 { --from-x: -20%; --from-y: 70%; --land-x: 13%; --land-y: 71%; --rest-bottom: 8%; --start-rotate: 32deg; --end-rotate: 8deg; --desk-tilt: 64deg; --drop-delay: -12.1s; --drop-duration: 22s; --z: 7; }
+.drop-8 { --from-x: 24%; --from-y: 118%; --land-x: 30%; --land-y: 67%; --rest-bottom: 13%; --start-rotate: -30deg; --end-rotate: -9deg; --desk-tilt: 63deg; --drop-delay: -14.2s; --drop-duration: 19s; --z: 8; }
+.drop-9 { --from-x: 50%; --from-y: -40%; --land-x: 47%; --land-y: 73%; --rest-bottom: 6%; --start-rotate: 21deg; --end-rotate: 4deg; --desk-tilt: 66deg; --drop-delay: -15.6s; --drop-duration: 21s; --z: 9; }
+.drop-10 { --from-x: 120%; --from-y: 62%; --land-x: 63%; --land-y: 69%; --rest-bottom: 10%; --start-rotate: -26deg; --end-rotate: -5deg; --desk-tilt: 63deg; --drop-delay: -17.4s; --drop-duration: 20s; --z: 8; }
+.drop-11 { --from-x: 82%; --from-y: 116%; --land-x: 78%; --land-y: 74%; --rest-bottom: 5%; --start-rotate: 28deg; --end-rotate: 7deg; --desk-tilt: 66deg; --drop-delay: -19.2s; --drop-duration: 22s; --z: 9; }
+.drop-12 { --from-x: 104%; --from-y: -30%; --land-x: 86%; --land-y: 61%; --rest-bottom: 19%; --start-rotate: -24deg; --end-rotate: -6deg; --desk-tilt: 59deg; --drop-delay: -20.8s; --drop-duration: 18s; --z: 5; }
+.drop-13 { --from-x: -18%; --from-y: -18%; --land-x: 5%; --land-y: 60%; --rest-bottom: 19%; --start-rotate: 23deg; --end-rotate: 3deg; --desk-tilt: 58deg; --drop-delay: -2.1s; --drop-duration: 23s; --z: 3; --photo-size: clamp(84px, 9vw, 130px); }
+.drop-14 { --from-x: 8%; --from-y: 118%; --land-x: 18%; --land-y: 78%; --rest-bottom: 0%; --start-rotate: -22deg; --end-rotate: -5deg; --desk-tilt: 68deg; --drop-delay: -4.7s; --drop-duration: 24s; --z: 10; --photo-size: clamp(84px, 9vw, 130px); }
+.drop-15 { --from-x: 112%; --from-y: -12%; --land-x: 34%; --land-y: 76%; --rest-bottom: 3%; --start-rotate: 24deg; --end-rotate: 8deg; --desk-tilt: 67deg; --drop-delay: -6.6s; --drop-duration: 22s; --z: 10; --photo-size: clamp(84px, 9vw, 130px); }
+.drop-16 { --from-x: -22%; --from-y: 30%; --land-x: 50%; --land-y: 61%; --rest-bottom: 18%; --start-rotate: -30deg; --end-rotate: -8deg; --desk-tilt: 59deg; --drop-delay: -9.6s; --drop-duration: 23s; --z: 5; --photo-size: clamp(84px, 9vw, 130px); }
+.drop-17 { --from-x: 64%; --from-y: 120%; --land-x: 65%; --land-y: 78%; --rest-bottom: 1%; --start-rotate: 25deg; --end-rotate: 6deg; --desk-tilt: 68deg; --drop-delay: -11.8s; --drop-duration: 24s; --z: 11; --photo-size: clamp(84px, 9vw, 130px); }
+.drop-18 { --from-x: 122%; --from-y: 84%; --land-x: 82%; --land-y: 78%; --rest-bottom: 1%; --start-rotate: -21deg; --end-rotate: -4deg; --desk-tilt: 68deg; --drop-delay: -13.7s; --drop-duration: 23s; --z: 11; --photo-size: clamp(84px, 9vw, 130px); }
+.drop-19 { --from-x: 2%; --from-y: -36%; --land-x: 11%; --land-y: 47%; --rest-bottom: 38%; --start-rotate: -32deg; --end-rotate: -10deg; --desk-tilt: 52deg; --drop-delay: -16.8s; --drop-duration: 25s; --z: 2; --photo-size: clamp(76px, 8vw, 118px); }
+.drop-20 { --from-x: -24%; --from-y: 12%; --land-x: 27%; --land-y: 45%; --rest-bottom: 42%; --start-rotate: 31deg; --end-rotate: 9deg; --desk-tilt: 50deg; --drop-delay: -18.5s; --drop-duration: 25s; --z: 2; --photo-size: clamp(76px, 8vw, 118px); }
+.drop-21 { --from-x: 44%; --from-y: -35%; --land-x: 43%; --land-y: 48%; --rest-bottom: 37%; --start-rotate: -25deg; --end-rotate: -7deg; --desk-tilt: 52deg; --drop-delay: -21.1s; --drop-duration: 26s; --z: 2; --photo-size: clamp(76px, 8vw, 118px); }
+.drop-22 { --from-x: 116%; --from-y: 18%; --land-x: 59%; --land-y: 46%; --rest-bottom: 41%; --start-rotate: 24deg; --end-rotate: 5deg; --desk-tilt: 51deg; --drop-delay: -22.7s; --drop-duration: 25s; --z: 2; --photo-size: clamp(76px, 8vw, 118px); }
+.drop-23 { --from-x: 76%; --from-y: -34%; --land-x: 75%; --land-y: 49%; --rest-bottom: 36%; --start-rotate: -23deg; --end-rotate: -5deg; --desk-tilt: 52deg; --drop-delay: -24.2s; --drop-duration: 26s; --z: 2; --photo-size: clamp(76px, 8vw, 118px); }
+.drop-24 { --from-x: 122%; --from-y: -8%; --land-x: 88%; --land-y: 47%; --rest-bottom: 39%; --start-rotate: 34deg; --end-rotate: 10deg; --desk-tilt: 51deg; --drop-delay: -25.7s; --drop-duration: 25s; --z: 2; --photo-size: clamp(76px, 8vw, 118px); }
+
+@keyframes photoFlyToDesk {
+  0% {
+    opacity: 0;
+    transform:
+      translate3d(var(--from-x), var(--from-y), 0)
+      rotate(var(--start-rotate))
+      rotateX(0deg)
+      scale(.86);
+  }
+  7% {
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+    transform:
+      translate3d(var(--land-x), var(--land-y), 0)
+      rotate(var(--end-rotate))
+      rotateX(var(--desk-tilt, 58deg))
+      skewX(-2deg)
+      scale(1);
+  }
+  70% {
+    opacity: 1;
+    transform:
+      translate3d(var(--land-x), var(--land-y), 0)
+      rotate(var(--end-rotate))
+      rotateX(var(--desk-tilt, 58deg))
+      skewX(-2deg)
+      scale(1);
+  }
+  82% {
+    opacity: 0;
+    transform:
+      translate3d(var(--land-x), var(--land-y), 0)
+      rotate(var(--end-rotate))
+      rotateX(var(--desk-tilt, 58deg))
+      skewX(-2deg)
+      scale(.985);
+  }
+  100% {
+    opacity: 0;
+    transform:
+      translate3d(var(--from-x), var(--from-y), 0)
+      rotate(var(--start-rotate))
+      rotateX(0deg)
+      scale(.86);
+  }
+}
+
+/* Journey top-drop desk alignment refinement */
+.journey-memory-photo {
+  top: var(--land-top, 64%);
+  left: var(--land-left, 48%);
+  transform:
+    translate3d(var(--start-drift, 0), -34rem, 0)
+    rotate(var(--start-rotate))
+    rotateX(0deg)
+    scale(.92);
+  animation-name: photoTopDropToDesk;
+}
+
+.photo-1,
+.drop-1 { --land-left: 5%; --land-top: 58%; --start-drift: -2.4rem; --start-rotate: -20deg; --end-rotate: -8deg; --desk-tilt: 55deg; --drop-delay: -1.2s; --drop-duration: 18s; --z: 3; }
+.photo-2,
+.drop-2 { --land-left: 18%; --land-top: 55%; --start-drift: 1.6rem; --start-rotate: 18deg; --end-rotate: 6deg; --desk-tilt: 54deg; --drop-delay: -3.3s; --drop-duration: 20s; --z: 4; }
+.photo-3,
+.drop-3 { --land-left: 32%; --land-top: 59%; --start-drift: -.7rem; --start-rotate: -17deg; --end-rotate: -4deg; --desk-tilt: 56deg; --drop-delay: -5.1s; --drop-duration: 19s; --z: 5; }
+.photo-4,
+.drop-4 { --land-left: 49%; --land-top: 56%; --start-drift: 2.2rem; --start-rotate: 19deg; --end-rotate: 7deg; --desk-tilt: 55deg; --drop-delay: -7s; --drop-duration: 21s; --z: 4; }
+.photo-5,
+.drop-5 { --land-left: 65%; --land-top: 60%; --start-drift: -1.8rem; --start-rotate: -18deg; --end-rotate: -7deg; --desk-tilt: 57deg; --drop-delay: -8.8s; --drop-duration: 20s; --z: 6; }
+.drop-6 { --land-left: 78%; --land-top: 56%; --start-drift: 1.3rem; --start-rotate: 15deg; --end-rotate: 5deg; --desk-tilt: 54deg; --drop-delay: -10.4s; --drop-duration: 18s; --z: 3; }
+.drop-7 { --land-left: 8%; --land-top: 73%; --start-drift: 2rem; --start-rotate: 21deg; --end-rotate: 8deg; --desk-tilt: 64deg; --drop-delay: -12.1s; --drop-duration: 22s; --z: 7; }
+.drop-8 { --land-left: 23%; --land-top: 69%; --start-drift: -2.2rem; --start-rotate: -21deg; --end-rotate: -9deg; --desk-tilt: 62deg; --drop-delay: -14.2s; --drop-duration: 19s; --z: 8; }
+.drop-9 { --land-left: 39%; --land-top: 75%; --start-drift: 1.4rem; --start-rotate: 16deg; --end-rotate: 4deg; --desk-tilt: 66deg; --drop-delay: -15.6s; --drop-duration: 21s; --z: 9; }
+.drop-10 { --land-left: 54%; --land-top: 71%; --start-drift: -1rem; --start-rotate: -16deg; --end-rotate: -5deg; --desk-tilt: 63deg; --drop-delay: -17.4s; --drop-duration: 20s; --z: 8; }
+.drop-11 { --land-left: 70%; --land-top: 75%; --start-drift: 2.5rem; --start-rotate: 20deg; --end-rotate: 7deg; --desk-tilt: 66deg; --drop-delay: -19.2s; --drop-duration: 22s; --z: 9; }
+.drop-12 { --land-left: 80%; --land-top: 65%; --start-drift: -1.7rem; --start-rotate: -18deg; --end-rotate: -6deg; --desk-tilt: 59deg; --drop-delay: -20.8s; --drop-duration: 18s; --z: 5; }
+.drop-13 { --land-left: 2%; --land-top: 64%; --start-drift: 1.2rem; --start-rotate: 15deg; --end-rotate: 3deg; --desk-tilt: 58deg; --drop-delay: -2.1s; --drop-duration: 23s; --z: 3; --photo-size: clamp(84px, 9vw, 130px); }
+.drop-14 { --land-left: 14%; --land-top: 80%; --start-drift: -1.6rem; --start-rotate: -17deg; --end-rotate: -5deg; --desk-tilt: 68deg; --drop-delay: -4.7s; --drop-duration: 24s; --z: 10; --photo-size: clamp(84px, 9vw, 130px); }
+.drop-15 { --land-left: 30%; --land-top: 78%; --start-drift: 2.2rem; --start-rotate: 18deg; --end-rotate: 8deg; --desk-tilt: 67deg; --drop-delay: -6.6s; --drop-duration: 22s; --z: 10; --photo-size: clamp(84px, 9vw, 130px); }
+.drop-16 { --land-left: 46%; --land-top: 65%; --start-drift: -2.1rem; --start-rotate: -19deg; --end-rotate: -8deg; --desk-tilt: 59deg; --drop-delay: -9.6s; --drop-duration: 23s; --z: 5; --photo-size: clamp(84px, 9vw, 130px); }
+.drop-17 { --land-left: 62%; --land-top: 80%; --start-drift: 1.8rem; --start-rotate: 16deg; --end-rotate: 6deg; --desk-tilt: 68deg; --drop-delay: -11.8s; --drop-duration: 24s; --z: 11; --photo-size: clamp(84px, 9vw, 130px); }
+.drop-18 { --land-left: 76%; --land-top: 79%; --start-drift: -1.4rem; --start-rotate: -15deg; --end-rotate: -4deg; --desk-tilt: 68deg; --drop-delay: -13.7s; --drop-duration: 23s; --z: 11; --photo-size: clamp(84px, 9vw, 130px); }
+.drop-19 { --land-left: 10%; --land-top: 53%; --start-drift: -2rem; --start-rotate: -21deg; --end-rotate: -10deg; --desk-tilt: 52deg; --drop-delay: -16.8s; --drop-duration: 25s; --z: 2; --photo-size: clamp(76px, 8vw, 118px); }
+.drop-20 { --land-left: 25%; --land-top: 52%; --start-drift: 1.5rem; --start-rotate: 20deg; --end-rotate: 9deg; --desk-tilt: 50deg; --drop-delay: -18.5s; --drop-duration: 25s; --z: 2; --photo-size: clamp(76px, 8vw, 118px); }
+.drop-21 { --land-left: 40%; --land-top: 54%; --start-drift: -.8rem; --start-rotate: -18deg; --end-rotate: -7deg; --desk-tilt: 52deg; --drop-delay: -21.1s; --drop-duration: 26s; --z: 2; --photo-size: clamp(76px, 8vw, 118px); }
+.drop-22 { --land-left: 56%; --land-top: 53%; --start-drift: 2rem; --start-rotate: 17deg; --end-rotate: 5deg; --desk-tilt: 51deg; --drop-delay: -22.7s; --drop-duration: 25s; --z: 2; --photo-size: clamp(76px, 8vw, 118px); }
+.drop-23 { --land-left: 71%; --land-top: 54%; --start-drift: -1.8rem; --start-rotate: -17deg; --end-rotate: -5deg; --desk-tilt: 52deg; --drop-delay: -24.2s; --drop-duration: 26s; --z: 2; --photo-size: clamp(76px, 8vw, 118px); }
+.drop-24 { --land-left: 82%; --land-top: 53%; --start-drift: 1.1rem; --start-rotate: 20deg; --end-rotate: 10deg; --desk-tilt: 51deg; --drop-delay: -25.7s; --drop-duration: 25s; --z: 2; --photo-size: clamp(76px, 8vw, 118px); }
+
+@keyframes photoTopDropToDesk {
+  0% {
+    opacity: 0;
+    transform:
+      translate3d(var(--start-drift, 0), -34rem, 0)
+      rotate(var(--start-rotate))
+      rotateX(0deg)
+      scale(.9);
+  }
+  7% {
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+    transform:
+      translate3d(0, 0, 0)
+      rotate(var(--end-rotate))
+      rotateX(var(--desk-tilt, 58deg))
+      skewX(-2deg)
+      scale(1);
+  }
+  70% {
+    opacity: 1;
+    transform:
+      translate3d(0, 0, 0)
+      rotate(var(--end-rotate))
+      rotateX(var(--desk-tilt, 58deg))
+      skewX(-2deg)
+      scale(1);
+  }
+  82% {
+    opacity: 0;
+    transform:
+      translate3d(0, 0, 0)
+      rotate(var(--end-rotate))
+      rotateX(var(--desk-tilt, 58deg))
+      skewX(-2deg)
+      scale(.985);
+  }
+  100% {
+    opacity: 0;
+    transform:
+      translate3d(var(--start-drift, 0), -34rem, 0)
+      rotate(var(--start-rotate))
+      rotateX(0deg)
+      scale(.9);
+  }
+}
+
+/* Journey managed 10-photo table stack */
+.journey-memory-photo {
+  top: var(--slot-top, var(--land-top, 62%));
+  left: var(--slot-left, var(--land-left, 40%));
+  z-index: var(--z, 3);
+  opacity: 0;
+  animation: none;
+  backface-visibility: hidden;
+  transform:
+    translate3d(0, -36rem, 0)
+    rotate(var(--start-rotate))
+    rotateX(0deg)
+    scale(.9);
+  transform-style: preserve-3d;
+  transition: opacity .55s ease, filter .55s ease;
+  will-change: transform, opacity;
+}
+
+.journey-memory-photo.is-dropping {
+  opacity: 1;
+  animation: journeyPhotoDropOnce var(--fall-duration, 2.35s) linear forwards;
+}
+
+.journey-memory-photo.is-settled {
+  opacity: 1;
+  transform:
+    translate3d(0, 0, 0)
+    rotate(var(--end-rotate))
+    rotateX(var(--desk-tilt, 58deg))
+    skewX(-2deg)
+    scale(1);
+}
+
+.journey-memory-photo.is-removing {
+  opacity: 0;
+  filter: saturate(.9) blur(.2px);
+  transform:
+    translate3d(0, 0, 0)
+    rotate(var(--end-rotate))
+    rotateX(var(--desk-tilt, 58deg))
+    skewX(-2deg)
+    scale(.96);
+}
+
+.slot-1 { --slot-left: 5%; --slot-top: 57%; --start-drift: -1.8rem; --float-drift: -1.2rem; --wind-drift: .7rem; --settle-drift: -.25rem; --start-rotate: -20deg; --air-rotate: -13deg; --end-rotate: -8deg; --desk-tilt: 55deg; --photo-size: clamp(84px, 9vw, 130px); }
+.slot-2 { --slot-left: 20%; --slot-top: 55%; --start-drift: 1.2rem; --float-drift: .55rem; --wind-drift: -1rem; --settle-drift: .28rem; --start-rotate: 18deg; --air-rotate: 12deg; --end-rotate: 6deg; --desk-tilt: 54deg; --photo-size: clamp(84px, 9vw, 130px); }
+.slot-3 { --slot-left: 35%; --slot-top: 58%; --start-drift: -.8rem; --float-drift: -1.15rem; --wind-drift: .38rem; --settle-drift: -.18rem; --start-rotate: -17deg; --air-rotate: -11deg; --end-rotate: -4deg; --desk-tilt: 56deg; --photo-size: clamp(84px, 9vw, 130px); }
+.slot-4 { --slot-left: 51%; --slot-top: 56%; --start-drift: 1.6rem; --float-drift: .9rem; --wind-drift: -1.2rem; --settle-drift: .22rem; --start-rotate: 19deg; --air-rotate: 13deg; --end-rotate: 7deg; --desk-tilt: 55deg; --photo-size: clamp(84px, 9vw, 130px); }
+.slot-5 { --slot-left: 67%; --slot-top: 59%; --start-drift: -1.3rem; --float-drift: -.7rem; --wind-drift: .95rem; --settle-drift: -.24rem; --start-rotate: -18deg; --air-rotate: -12deg; --end-rotate: -7deg; --desk-tilt: 57deg; --photo-size: clamp(84px, 9vw, 130px); }
+.slot-6 { --slot-left: 12%; --slot-top: 73%; --start-drift: 1.5rem; --float-drift: .75rem; --wind-drift: -1rem; --settle-drift: .2rem; --start-rotate: 21deg; --air-rotate: 14deg; --end-rotate: 8deg; --desk-tilt: 64deg; --photo-size: clamp(92px, 10vw, 142px); }
+.slot-7 { --slot-left: 28%; --slot-top: 70%; --start-drift: -1.6rem; --float-drift: -1rem; --wind-drift: .85rem; --settle-drift: -.22rem; --start-rotate: -21deg; --air-rotate: -14deg; --end-rotate: -9deg; --desk-tilt: 62deg; --photo-size: clamp(92px, 10vw, 142px); }
+.slot-8 { --slot-left: 45%; --slot-top: 75%; --start-drift: 1rem; --float-drift: 1.35rem; --wind-drift: -.55rem; --settle-drift: .14rem; --start-rotate: 16deg; --air-rotate: 10deg; --end-rotate: 4deg; --desk-tilt: 66deg; --photo-size: clamp(92px, 10vw, 142px); }
+.slot-9 { --slot-left: 61%; --slot-top: 71%; --start-drift: -1.2rem; --float-drift: -.58rem; --wind-drift: .82rem; --settle-drift: -.18rem; --start-rotate: -16deg; --air-rotate: -10deg; --end-rotate: -5deg; --desk-tilt: 63deg; --photo-size: clamp(92px, 10vw, 142px); }
+.slot-10 { --slot-left: 76%; --slot-top: 75%; --start-drift: 1.8rem; --float-drift: 1.1rem; --wind-drift: -.9rem; --settle-drift: .24rem; --start-rotate: 20deg; --air-rotate: 13deg; --end-rotate: 7deg; --desk-tilt: 66deg; --photo-size: clamp(92px, 10vw, 142px); }
+
+.fall-1 { --fall-duration: 2.45s; --float-drift: -1.3rem; --wind-drift: .65rem; --settle-drift: -.18rem; --air-rotate: -12deg; }
+.fall-2 { --fall-duration: 2.6s; --float-drift: .85rem; --wind-drift: -1.05rem; --settle-drift: .22rem; --air-rotate: 13deg; }
+.fall-3 { --fall-duration: 2.3s; --float-drift: -.45rem; --wind-drift: .95rem; --settle-drift: -.26rem; --air-rotate: -9deg; }
+.fall-4 { --fall-duration: 2.55s; --float-drift: 1.25rem; --wind-drift: -.5rem; --settle-drift: .16rem; --air-rotate: 10deg; }
+.fall-5 { --fall-duration: 2.4s; --float-drift: -.9rem; --wind-drift: .35rem; --settle-drift: -.14rem; --air-rotate: -14deg; }
+.fall-6 { --fall-duration: 2.7s; --float-drift: .35rem; --wind-drift: -1.2rem; --settle-drift: .3rem; --air-rotate: 15deg; }
+
+@keyframes journeyPhotoDropOnce {
+  0% {
+    opacity: 0;
+    transform:
+      translate3d(var(--start-drift, 0), -40rem, 0)
+      rotate(var(--start-rotate))
+      rotateX(0deg)
+      scale(.88);
+  }
+  10% {
+    opacity: .85;
+    transform:
+      translate3d(var(--float-drift, 0), -37rem, 0)
+      rotate(var(--start-rotate))
+      rotateX(0deg)
+      scale(.9);
+  }
+  24% {
+    opacity: 1;
+    transform:
+      translate3d(var(--float-drift, 0), -31rem, 0)
+      rotate(var(--air-rotate, var(--start-rotate)))
+      rotateX(0deg)
+      scale(.93);
+  }
+  42% {
+    transform:
+      translate3d(var(--wind-drift, 0), -18rem, 0)
+      rotate(var(--air-rotate, var(--start-rotate)))
+      rotateX(3deg)
+      scale(.96);
+  }
+  62% {
+    transform:
+      translate3d(var(--settle-drift, 0), -7.5rem, 0)
+      rotate(var(--air-rotate, var(--end-rotate)))
+      rotateX(14deg)
+      skewX(-.4deg)
+      scale(.99);
+  }
+  78% {
+    transform:
+      translate3d(0, -1.4rem, 0)
+      rotate(var(--end-rotate))
+      rotateX(42deg)
+      skewX(-1.4deg)
+      scale(1);
+  }
+  89% {
+    transform:
+      translate3d(0, .42rem, 0)
+      rotate(var(--end-rotate))
+      rotateX(var(--desk-tilt, 58deg))
+      skewX(-2deg)
+      scale(1.004);
+  }
+  95% {
+    transform:
+      translate3d(0, -.14rem, 0)
+      rotate(var(--end-rotate))
+      rotateX(var(--desk-tilt, 58deg))
+      skewX(-2deg)
+      scale(1.002);
+  }
+  100% {
+    opacity: 1;
+    transform:
+      translate3d(0, 0, 0)
+      rotate(var(--end-rotate))
+      rotateX(var(--desk-tilt, 58deg))
+      skewX(-2deg)
+      scale(1);
+  }
+}
+
+/* Journey life highlights */
+.journey-section {
+  padding-block: clamp(2.4rem, 5vw, 4.3rem);
+}
+
+.journey-section-head {
+  margin-bottom: clamp(1.1rem, 2.5vw, 1.7rem);
+}
+
+.journey-section-title {
+  margin: 0;
+  color: var(--journey-ink);
+  font-size: clamp(2rem, 4.4vw, 3.35rem);
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.life-highlight-grid,
+.hobby-grid,
+.journey-card-grid,
+.journey-photo-grid {
+  display: grid;
+  gap: clamp(1rem, 2.4vw, 1.35rem);
+}
+
+.life-highlight-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.life-highlight-card,
+.hobby-card,
+.journey-card,
+.journey-photo-card,
+.personal-growth-card,
+.reflection-card,
+.journey-cta {
+  position: relative;
+  color: var(--journey-ink);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, .12), rgba(255, 255, 255, .035)),
+    var(--journey-paper);
+  border: 1px solid rgba(255, 255, 255, .12);
+  box-shadow: 0 18px 42px rgba(4, 7, 18, .24);
+}
+
+.life-highlight-card {
+  min-height: 172px;
+  padding: 1.2rem;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.life-highlight-card::after {
+  content: "";
+  position: absolute;
+  right: -2.4rem;
+  top: -2.4rem;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 999px;
+  background: rgba(56, 189, 248, .18);
+}
+
+.life-highlight-card:nth-child(2)::after {
+  background: rgba(250, 204, 21, .24);
+}
+
+.life-highlight-card:nth-child(3)::after {
+  background: rgba(251, 113, 133, .18);
+}
+
+.life-highlight-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 2.65rem;
+  height: 2.65rem;
+  border-radius: 16px;
+  color: #fff;
+  background: linear-gradient(135deg, var(--journey-sky), var(--journey-teal));
+  font-weight: 900;
+}
+
+.life-highlight-card:nth-child(2) .life-highlight-icon {
+  background: linear-gradient(135deg, var(--journey-yellow), var(--journey-orange));
+}
+
+.life-highlight-card:nth-child(3) .life-highlight-icon {
+  background: linear-gradient(135deg, var(--journey-coral), var(--journey-purple));
+}
+
+.life-highlight-card h3,
+.hobby-card span,
+.journey-card h3 {
+  margin: .95rem 0 .42rem;
+  color: var(--journey-ink);
+  font-size: 1.18rem;
+}
+
+.life-highlight-card p,
+.journey-card p,
+.personal-growth-card p,
+.reflection-card p,
+.journey-cta p {
+  margin: 0;
+  color: var(--journey-muted);
+  line-height: 1.65;
+}
+
+/* Journey hobbies and interests */
+.hobby-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.hobby-card {
+  min-height: 104px;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  border-radius: 24px;
+  overflow: hidden;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.hobby-card::before {
+  content: "";
+  position: absolute;
+  inset: auto -1rem -2.4rem;
+  height: 4.5rem;
+  border-radius: 999px 999px 0 0;
+  background: rgba(56, 189, 248, .18);
+}
+
+.hobby-card:nth-child(2n)::before {
+  background: rgba(250, 204, 21, .25);
+}
+
+.hobby-card:nth-child(3n)::before {
+  background: rgba(45, 212, 191, .20);
+}
+
+.hobby-card:nth-child(4n)::before {
+  background: rgba(251, 113, 133, .18);
+}
+
+.hobby-card span {
+  position: relative;
+  margin: 0;
+  font-weight: 900;
+  text-align: center;
+}
+
+.hobby-card:hover,
+.hobby-card:focus-within {
+  transform: translateY(-5px);
+  box-shadow: 0 22px 46px rgba(15, 23, 42, .13);
+}
+
+/* Journey photo moments */
+.journey-card-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.journey-card {
+  border-radius: 26px;
+  overflow: hidden;
+}
+
+.journey-card-photo {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: rgba(56, 189, 248, .10);
+}
+
+.journey-card-photo::before {
+  inset: 0;
+  border-radius: 0;
+}
+
+.journey-card-body {
+  padding: 1rem;
+}
+
+.journey-card-chip {
+  display: inline-flex;
+  padding: .25rem .58rem;
+  border-radius: 999px;
+  color: color-mix(in oklab, var(--journey-teal), white 18%);
+  background: rgba(45, 212, 191, .12);
+  font-size: .76rem;
+  font-weight: 900;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.journey-location {
+  color: color-mix(in oklab, var(--journey-orange), white 18%) !important;
+  font-weight: 850;
+}
+
+.journey-photo-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.journey-photo-card {
+  margin: 0;
+  padding: .62rem .62rem 1rem;
+  border-radius: 24px;
+}
+
+.journey-photo-card::before {
+  inset: .62rem .62rem 3.1rem;
+}
+
+.journey-photo-card img {
+  aspect-ratio: 4 / 3;
+  background: rgba(56, 189, 248, .10);
+}
+
+.journey-photo-card figcaption {
+  margin-top: .65rem;
+  color: var(--journey-muted);
+  font-size: .9rem;
+  font-weight: 750;
+}
+
+/* Journey personal growth */
+.personal-growth-card {
+  display: grid;
+  grid-template-columns: minmax(150px, .32fr) minmax(0, 1fr);
+  gap: clamp(1rem, 3vw, 2rem);
+  align-items: center;
+  padding: clamp(1.2rem, 3vw, 2rem);
+  border-radius: 28px;
+}
+
+.growth-path {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 7rem;
+}
+
+.growth-path::before {
+  content: "";
+  position: absolute;
+  left: 1.4rem;
+  right: 1.4rem;
+  top: 50%;
+  height: 5px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--journey-sky), var(--journey-teal), var(--journey-green));
+  transform: translateY(-50%);
+}
+
+.growth-path span {
+  position: relative;
+  z-index: 1;
+  width: 2.8rem;
+  height: 2.8rem;
+  border: 6px solid rgba(255, 255, 255, .8);
+  border-radius: 999px;
+  background: var(--journey-teal);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, .12);
+}
+
+.growth-path span:nth-child(2) {
+  background: var(--journey-yellow);
+}
+
+.growth-path span:nth-child(3) {
+  background: var(--journey-green);
+}
+
+.personal-growth-card small {
+  display: inline-flex;
+  margin-top: .9rem;
+  padding: .38rem .68rem;
+  border-radius: 999px;
+  color: color-mix(in oklab, var(--journey-yellow), white 12%);
+  background: rgba(251, 146, 60, .15);
+  font-weight: 800;
+}
+
+.reflection-card {
+  max-width: 900px;
+  margin: 0;
+  padding: clamp(1.3rem, 4vw, 2.4rem);
+  border-radius: 30px;
+}
+
+.reflection-card::before {
+  content: "";
+  display: block;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-bottom: .8rem;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 38% 36%, #fff 0 .42rem, transparent .45rem),
+    linear-gradient(135deg, var(--journey-yellow), var(--journey-orange));
+}
+
+.reflection-card p {
+  max-width: 760px;
+  color: var(--journey-ink);
+  font-size: clamp(1.35rem, 3vw, 2.2rem);
+  font-weight: 850;
+  line-height: 1.35;
+}
+
+.journey-cta {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(1rem, 3vw, 2rem);
+  align-items: center;
+  padding: clamp(1.3rem, 4vw, 2.4rem);
+  border-radius: 32px;
+  background:
+    radial-gradient(circle at 84% 18%, rgba(56, 189, 248, .18), transparent 13rem),
+    radial-gradient(circle at 18% 78%, rgba(250, 204, 21, .16), transparent 14rem),
+    linear-gradient(135deg, rgba(255, 255, 255, .12), rgba(255, 255, 255, .045)),
+    var(--journey-paper);
+}
+
+body.journey-page .site-footer {
+  color: var(--journey-muted);
+}
+
+body.journey-page .site-footer a {
+  color: color-mix(in oklab, var(--journey-teal), white 12%);
+}
+
+@media (max-width: 900px) {
+  body.journey-page .site-header .nav {
+    border-color: rgba(251, 146, 60, .24);
+    background:
+      linear-gradient(135deg, rgba(255, 255, 255, .11), rgba(255, 255, 255, .045)),
+      rgba(23, 18, 38, .96);
+  }
+
+  .journey-hero {
+    grid-template-columns: 1fr;
+    gap: clamp(1.35rem, 5vw, 2.2rem);
+    min-height: auto;
+    width: min(100% - 1.4rem, 760px);
+    margin-top: .85rem;
+    padding: clamp(2.2rem, 7vw, 3.2rem) clamp(1rem, 4vw, 1.6rem);
+    border-radius: 28px;
+  }
+
+  .journey-hero::after {
+    right: -7rem;
+    top: -6rem;
+    opacity: .7;
+  }
+
+  .journey-hero h1 {
+    font-size: clamp(3.4rem, 16vw, 5.8rem);
+  }
+
+  .journey-hero-subtitle {
+    margin-top: 1rem;
+    font-size: clamp(1rem, 3.2vw, 1.15rem);
+  }
+
+  .journey-hero-support {
+    font-size: .96rem;
+    line-height: 1.62;
+  }
+
+  .journey-hero-chips {
+    gap: .5rem;
+    margin-top: 1.1rem;
+  }
+
+  .journey-hero-chips span {
+    min-height: 2.05rem;
+    padding: .36rem .66rem;
+    font-size: .8rem;
+  }
+
+  .journey-hero-actions {
+    gap: .55rem;
+    margin-top: 1.1rem;
+  }
+
+  .journey-memory-stage {
+    min-height: clamp(300px, 56vw, 390px);
+    border-radius: 24px;
+  }
+
+  .journey-table-surface {
+    background-position: center bottom;
+  }
+
+  .journey-memory-photo {
+    width: clamp(72px, 15vw, 108px);
+  }
+
+  .life-highlight-grid,
+  .journey-card-grid,
+  .journey-photo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hobby-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .personal-growth-card,
+  .journey-cta {
+    grid-template-columns: 1fr;
+  }
+
+  .journey-cta-actions {
+    margin-top: 0;
+  }
+
+  .journey-section {
+    padding-block: clamp(2rem, 5.8vw, 3rem);
+  }
+
+  .journey-section-title {
+    font-size: clamp(1.85rem, 7vw, 2.7rem);
+  }
+
+  .reflection-card p {
+    font-size: clamp(1.2rem, 4.8vw, 1.75rem);
+  }
+}
+
+@media (max-width: 560px) {
+  .journey-main {
+    padding-bottom: 1rem;
+  }
+
+  .journey-hero {
+    width: min(100% - .8rem, 96%);
+    padding: 2rem .9rem 1rem;
+    border-radius: 22px;
+  }
+
+  .journey-eyebrow,
+  .journey-section-kicker {
+    padding: .26rem .62rem;
+    font-size: .72rem;
+  }
+
+  .journey-hero h1 {
+    font-size: clamp(3rem, 18vw, 4.2rem);
+  }
+
+  .journey-hero h1::after,
+  .journey-section-title::after {
+    width: 6.2rem;
+    height: .34rem;
+  }
+
+  .journey-hero-subtitle {
+    line-height: 1.5;
+  }
+
+  .journey-hero-support {
+    font-size: .9rem;
+  }
+
+  .journey-hero-chips {
+    gap: .42rem;
+  }
+
+  .journey-hero-chips span {
+    min-height: 1.95rem;
+    padding: .32rem .56rem;
+    font-size: .74rem;
+  }
+
+  .journey-hero-actions,
+  .journey-cta-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .journey-memory-stage {
+    min-height: clamp(245px, 70vw, 310px);
+    border-radius: 20px;
+  }
+
+  .journey-table-surface {
+    background-size: cover;
+    background-position: center bottom;
+  }
+
+  .journey-memory-photo {
+    width: clamp(54px, 17vw, 78px);
+    padding: .32rem;
+    border-radius: 11px;
+  }
+
+  .journey-memory-photo img,
+  .journey-card-photo img,
+  .journey-photo-card img {
+    border-radius: 8px;
+  }
+
+  .journey-memory-photo::before {
+    inset: .32rem;
+    border-radius: 8px;
+    font-size: .58rem;
+  }
+
+  .journey-memory-photo::after {
+    top: -5px;
+    height: 11px;
+  }
+
+  .slot-1 { --slot-left: 4%; --slot-top: 57%; }
+  .slot-2 { --slot-left: 20%; --slot-top: 55%; }
+  .slot-3 { --slot-left: 36%; --slot-top: 58%; }
+  .slot-4 { --slot-left: 52%; --slot-top: 56%; }
+  .slot-5 { --slot-left: 68%; --slot-top: 59%; }
+  .slot-6 { --slot-left: 10%; --slot-top: 73%; }
+  .slot-7 { --slot-left: 27%; --slot-top: 70%; }
+  .slot-8 { --slot-left: 44%; --slot-top: 75%; }
+  .slot-9 { --slot-left: 60%; --slot-top: 71%; }
+  .slot-10 { --slot-left: 75%; --slot-top: 75%; }
+
+  .journey-section {
+    padding-block: 1.8rem;
+  }
+
+  .journey-section-head {
+    margin-bottom: .95rem;
+  }
+
+  .life-highlight-grid,
+  .journey-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .journey-photo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .75rem;
+  }
+
+  .life-highlight-card {
+    min-height: auto;
+    padding: 1rem;
+    border-radius: 20px;
+  }
+
+  .hobby-grid {
+    gap: .7rem;
+  }
+
+  .hobby-card {
+    min-height: 76px;
+    border-radius: 18px;
+  }
+
+  .hobby-card span {
+    font-size: .98rem;
+  }
+
+  .journey-card {
+    border-radius: 20px;
+  }
+
+  .journey-card-body {
+    padding: .9rem;
+  }
+
+  .journey-photo-card {
+    padding: .45rem .45rem .8rem;
+    border-radius: 18px;
+  }
+
+  .journey-photo-card figcaption {
+    font-size: .78rem;
+    line-height: 1.35;
+  }
+
+  .personal-growth-card,
+  .reflection-card,
+  .journey-cta {
+    border-radius: 22px;
+  }
+
+  .growth-path {
+    min-height: 5.5rem;
+  }
+
+  .growth-path span {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-width: 5px;
+  }
+
+  .reflection-card::before {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+
+  .journey-btn {
+    width: 100%;
+    min-height: 2.55rem;
+    padding-inline: .85rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .journey-hero {
+    padding-inline: .75rem;
+  }
+
+  .journey-memory-stage {
+    min-height: 230px;
+  }
+
+  .journey-memory-photo {
+    width: clamp(48px, 16vw, 64px);
+  }
+
+  .journey-photo-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .journey-memory-photo {
+    animation: none;
+    opacity: 1;
+    transform:
+      translate3d(0, 0, 0)
+      rotate(var(--end-rotate))
+      rotateX(var(--desk-tilt, 58deg))
+      skewX(-2deg);
+  }
+
+  .journey-btn,
+  .hobby-card,
+  .journey-card {
+    transition: none !important;
+  }
+}
+
+.journey-reduced-motion .journey-memory-photo {
+  animation: none;
+  opacity: 1;
+  transform:
+    translate3d(0, 0, 0)
+    rotate(var(--end-rotate))
+    rotateX(var(--desk-tilt, 58deg))
+    skewX(-2deg);
+}

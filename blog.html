@@ -1,0 +1,85 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog | Bhagya — Nutrition & Food Science</title>
+    <meta name="description" content="Blog notes by Bhagya on nutrition, food science, public health, and AI-based digital health tools." />
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container row nav-container">
+        <a class="brand nav-link" href="index.html">Bhagya</a>
+        <button class="menu-toggle nav-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">☰</button>
+        <nav class="nav nav-links" id="siteNav" aria-label="Primary navigation">
+          <a class="nav-link" href="index.html#about">About</a>
+          <a class="nav-link" href="index.html#research">Research</a>
+          <a class="nav-link" href="index.html#recognitions">Recognitions</a>
+          <a class="nav-link" href="index.html#volunteering">Volunteering</a>
+          <a class="nav-link active" href="blog.html">Blog</a>
+        </nav>
+      </div>
+    </header>
+    <main class="blog-page">
+      <section class="hero container will-animate">
+        <div class="hero-text">
+          <p class="eyebrow">Blog</p>
+          <h1>Notes on nutrition research, digital health, and food science.</h1>
+          <p class="lead">A reflective space for updates, academic ideas, and research stories from Bhagya’s work in food science and public health.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="index.html#research">Back to portfolio</a>
+            <a class="btn" href="index.html#about">About</a>
+          </div>
+          <!-- TODO: Add your personal blog posts here and link each preview to the full article page. -->
+        </div>
+      </section>
+      <section class="container section reveal" aria-labelledby="blogSectionTitle">
+        <div class="section-header">
+          <span class="section-label">Blog previews</span>
+          <h2 id="blogSectionTitle">Recent topics</h2>
+          <p class="section-description">Current themes that will grow with blog posts on nutrition, research method reflections, and digital health insights.</p>
+        </div>
+        <div class="grid three blog-grid">
+          <article class="card">
+            <p class="tag">Nutrition</p>
+            <h3>AI-powered glycemic load modeling</h3>
+            <p>Early ideas on how machine learning can support personalized nutrition and metabolic health decisions.</p>
+            <a class="btn more" href="#top">Read more</a>
+          </article>
+          <article class="card">
+            <p class="tag">Research Journey</p>
+            <h3>Planning rigorous food science studies</h3>
+            <p>Thoughts on study design, dietary assessment, and building research that supports real-world nutrition practice.</p>
+            <a class="btn more" href="#top">Read more</a>
+          </article>
+          <article class="card">
+            <p class="tag">Public Health</p>
+            <h3>Nutrition literacy and community impact</h3>
+            <p>Observations on how food literacy and healthy eating guidance can be made more accessible and inclusive.</p>
+            <a class="btn more" href="#top">Read more</a>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer container">
+      <div class="footer-copy">
+        <p class="footer-title">Bhagya — Nutrition & Food Science Blog</p>
+        <p>Professional reflections on research, policy, and community-centered nutrition practice.</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:your.email@example.com">your.email@example.com</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Google Scholar</a>
+        <a href="#">ResearchGate</a>
+        <a href="#">ORCID</a>
+      </div>
+      <small>&copy; <span id="year"></span> Bhagya. All rights reserved.</small>
+    </footer>
+  </body>
+</html>
