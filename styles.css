@@ -391,6 +391,74 @@ button {
   outline-offset: 3px;
 }
 
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.3rem;
+  justify-content: flex-start;
+}
+
+.profile-icon {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: white;
+  color: var(--ink);
+  font-size: 1.1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.profile-icon i {
+  display: inline-block;
+}
+
+.profile-icon:hover,
+.profile-icon:focus-visible {
+  background: white;
+  transform: translateY(-2px);
+  box-shadow: 0 15px 28px rgba(149, 120, 138, 0.12);
+}
+
+.profile-icon:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--general-accent) 30%, white);
+  outline-offset: 3px;
+}
+
+.profile-icon.google {
+  background: rgba(198, 222, 241, 0.68);
+  color: #1f4d7a;
+  border-color: rgba(31, 77, 122, 0.2);
+}
+
+.profile-icon.researchgate {
+  background: rgba(201, 228, 222, 0.68);
+  color: #1b5a42;
+  border-color: rgba(27, 90, 66, 0.2);
+}
+
+.profile-icon.orcid {
+  background: rgba(208, 239, 214, 0.68);
+  color: #276a3c;
+  border-color: rgba(39, 106, 60, 0.2);
+}
+
+.profile-icon.linkedin {
+  background: rgba(198, 222, 241, 0.68);
+  color: #0a66c2;
+  border-color: rgba(10, 102, 194, 0.2);
+}
+
+@media (max-width: 720px) {
+  .profile-links {
+    justify-content: center;
+  }
+}
+
 .btn:hover {
   transform: translateY(-1px);
   box-shadow: 0 16px 34px rgba(38, 55, 71, 0.15);
