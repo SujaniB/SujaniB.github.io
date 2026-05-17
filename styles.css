@@ -242,6 +242,51 @@ button {
   border-bottom: 1px solid var(--border);
 }
 
+.blog-hero {
+  background-color: transparent;
+  background-image: url("assets/blog/blog_back.png");
+  background-size: cover;
+  background-position: center;
+  padding: clamp(3rem, 6vw, 4.5rem) 0 clamp(2rem, 4vw, 3rem);
+  min-height: 420px;
+  border-bottom: 1px solid var(--border);
+}
+
+.blog-hero .hero-text {
+  margin-top: -1rem;
+}
+
+.book-selector-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.book-selector-card {
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 1rem;
+  min-height: 120px;
+  display: grid;
+  place-items: start stretch;
+  gap: 1rem;
+  text-align: center;
+}
+
+.book-selector-card h3 {
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.btn.small {
+  padding: 0.7rem 1.1rem;
+  font-size: 0.95rem;
+}
+
 .explore-section {
   background-color: var(--pastel-peach);
   border-bottom: 1px solid var(--border);
