@@ -6,6 +6,7 @@
   --pastel-lavender: #DBCDF0;
   --pastel-pink: #F2C6DE;
   --pastel-peach: #F7D9C4;
+  --pastel-lemon: #FFF9E5;
 
   --about-accent: var(--pastel-pink);
   --research-accent: var(--pastel-lavender);
@@ -234,12 +235,24 @@ button {
   cursor: pointer;
 }
 
+.section-hero {
+  background-color: var(--pastel-lemon);
+  background-image: radial-gradient(var(--border) 1.5px, transparent 0);
+  background-size: 32px 32px;
+  border-bottom: 1px solid var(--border);
+}
+
+.explore-section {
+  background-color: var(--pastel-peach);
+  border-bottom: 1px solid var(--border);
+}
+
 .hero {
   display: grid;
   grid-template-columns: 1.2fr 0.9fr;
   align-items: center;
   gap: clamp(2rem, 4vw, 3.5rem);
-  padding: clamp(3rem, 6vw, 4.5rem) 0 2rem;
+  padding: clamp(3.5rem, 8vw, 6rem) 0;
 }
 
 .hero-text {
@@ -448,14 +461,14 @@ button {
 
 .explore-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   gap: 1.5rem;
   margin-top: 2rem;
 }
 
 .explore-card {
   background: white;
-  padding: 2rem 1.5rem;
+  padding: 0;
   border-radius: var(--radius);
   text-align: center;
   border: 1px solid var(--border);
@@ -463,6 +476,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .explore-card:hover { 
@@ -471,6 +485,24 @@ button {
   background: color-mix(in srgb, var(--section-accent) 36%, white);
   border-color: color-mix(in srgb, var(--section-accent) 68%, white);
 }
+
+.explore-card-img {
+  width: 100%;
+  border-radius: 0;
+  margin-bottom: 0.75rem;
+  border: none;
+}
+
+.explore-card h3 {
+  padding: 0 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.explore-card p {
+  padding: 0 1.25rem 1.25rem;
+  margin: 0;
+}
+
 .card-badge {
   width: 50px;
   height: 50px;
@@ -839,7 +871,8 @@ button {
   }
   .about-grid,
   .research-grid,
-  .blog-grid {
+  .blog-grid,
+  .explore-grid {
     grid-template-columns: 1fr;
   }
   .section {
