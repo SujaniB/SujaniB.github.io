@@ -1561,15 +1561,17 @@ textarea:focus-visible {
   color: var(--ink);
   font-size: clamp(3.2rem, 7vw, 6rem);
   letter-spacing: 0;
-  line-height: 0.92;
+  line-height: 1.1;
+  padding-bottom: 0.1em;
   text-wrap: balance;
 }
 
 .highlight {
   color: transparent;
-  background: linear-gradient(135deg, #9B5B66 0%, #7D5B9D 52%, #2C7FAB 100%);
+  background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, #9B5B66 20%, #7D5B9D 50%, #2C7FAB 80%, rgba(255,255,255,0.95) 100%);
   -webkit-background-clip: text;
   background-clip: text;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
 }
 
 .eyebrow {
@@ -1587,6 +1589,10 @@ textarea:focus-visible {
   max-width: 42rem;
   font-size: clamp(1.06rem, 1.6vw, 1.24rem);
   font-weight: 500;
+}
+
+.hero .lead {
+  margin-top: 2.2rem;
 }
 
 .hero-subtitle {
@@ -1648,6 +1654,7 @@ textarea:focus-visible {
   position: absolute;
   border-radius: 999px;
   pointer-events: none;
+  display: none;
 }
 
 .hero-art::before {
@@ -1672,15 +1679,16 @@ textarea:focus-visible {
   width: min(330px, 86vw);
   border-radius: 28px;
   border: 1px solid rgba(142, 102, 94, 0.14);
-  box-shadow: 0 28px 70px rgba(142, 110, 80, 0.2), 0 0 0 12px rgba(255,255,255,0.48);
-  background: rgba(255,255,255,0.72);
+  box-shadow: 0 28px 70px rgba(142, 110, 80, 0.2);
+  background: #ffffff;
+  padding: 12px;
   transform: rotate(-2deg) translateY(-0.8rem);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .hero-art:hover .profile-frame {
   transform: rotate(0deg) translateY(-1.1rem);
-  box-shadow: 0 34px 86px rgba(142, 110, 80, 0.24), 0 0 0 14px rgba(255,255,255,0.54);
+  box-shadow: 0 34px 86px rgba(142, 110, 80, 0.24);
 }
 
 .profile-frame img {
