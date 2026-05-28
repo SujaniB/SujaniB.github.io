@@ -1511,11 +1511,11 @@ textarea:focus-visible {
   overflow: hidden;
   isolation: isolate;
   background:
-    radial-gradient(circle at 80% 20%, rgba(242, 198, 222, 0.35) 0%, transparent 50%),
-    radial-gradient(circle at 20% 80%, rgba(198, 222, 241, 0.35) 0%, transparent 50%),
-    radial-gradient(circle at 10% 10%, rgba(201, 228, 222, 0.3) 0%, transparent 50%),
-    radial-gradient(circle at 90% 90%, rgba(247, 217, 196, 0.3) 0%, transparent 50%),
-    linear-gradient(135deg, #fffcf7 0%, #fff9f4 100%);
+    radial-gradient(circle at 15% 35%, rgba(247, 217, 196, 0.6) 0%, transparent 45%),
+    radial-gradient(circle at 85% 40%, rgba(219, 205, 240, 0.6) 0%, transparent 50%),
+    radial-gradient(circle at 75% 85%, rgba(201, 228, 222, 0.5) 0%, transparent 55%),
+    radial-gradient(circle at 30% 85%, rgba(250, 237, 203, 0.45) 0%, transparent 40%),
+    linear-gradient(180deg, #fffcf0 0%, #fffbf5 100%);
 }
 
 .section-hero::before {
@@ -1523,11 +1523,14 @@ textarea:focus-visible {
   position: absolute;
   inset: 0;
   pointer-events: none;
+  z-index: 0;
   background:
+    /* Decorative elements: botanical, science, eye-guiding path, and sparkles (Increased opacity) */
+    url("data:image/svg+xml,%3Csvg width='1000' height='1000' viewBox='0 0 1000 1000' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M950 50 C 900 100, 850 50, 800 100 M800 100 C 750 150, 800 200, 850 150' stroke='%23f2c6de' stroke-opacity='0.4' stroke-width='1.5'/%3E%3Cpath d='M50 950 C 100 900, 150 950, 200 900 M200 900 C 250 850, 200 800, 150 850' stroke='%23c9e4de' stroke-opacity='0.4' stroke-width='1.5'/%3E%3Ccircle cx='850' cy='150' r='3' fill='%23dbcdf0' fill-opacity='0.45'/%3E%3Ccircle cx='900' cy='200' r='2' fill='%23dbcdf0' fill-opacity='0.45'/%3E%3Ccircle cx='880' cy='100' r='2.5' fill='%23dbcdf0' fill-opacity='0.45'/%3E%3Cpath d='M850 150 L 900 200 M850 150 L 880 100' stroke='%23dbcdf0' stroke-opacity='0.3' stroke-width='1'/%3E%3Ccircle cx='200' cy='300' r='1.5' fill='%23f7d9c4' fill-opacity='0.5'/%3E%3Ccircle cx='700' cy='100' r='1' fill='%23c6def1' fill-opacity='0.5'/%3E%3Ccircle cx='400' cy='800' r='2' fill='%23faedcb' fill-opacity='0.5'/%3E%3Cpath d='M50 400 Q 300 350, 600 450 T 950 350' stroke='%23f7d9c4' stroke-opacity='0.3' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat center/cover,
+    /* Noise texture */
     url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E"),
-    linear-gradient(110deg, transparent 0 42%, rgba(255, 255, 255, 0.55) 49%, transparent 58%),
-    radial-gradient(circle at 50% 0, rgba(255, 255, 255, 0.72), transparent 36rem);
-  opacity: 0.68;
+    radial-gradient(circle at 50% 0, rgba(255, 255, 255, 0.45), transparent 36rem);
+  opacity: 1;
 }
 
 .section-hero::after {
